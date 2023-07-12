@@ -18,7 +18,7 @@
     margin: 0.5em;
 }
 
-.PrimaryButton , .SecondaryButton :active {
+.PrimaryButton:active, .SecondaryButton:active {
     transform: scale(0.98);
 }
 
@@ -27,7 +27,7 @@
     color: var(--text-white);
 }
 
-.PrimaryButton :hover{
+.PrimaryButton:hover{
     background: var(--primary-dark);
 }
 
@@ -37,7 +37,7 @@
     color: var(--secondary-main);
 }
 
-.SecondaryButton :hover{
+.SecondaryButton:hover{
     background: var(--primary-lighter);
 }
 

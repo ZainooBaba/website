@@ -12,7 +12,7 @@ function App() {
         <PrimaryButton text="Primary Button" />
         <SecondaryButton text="Secondary Button" />
           <TextPrompt />
-          {/*<Form />*/}
+          <Form />
       </header>
     </div>
   );

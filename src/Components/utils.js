@@ -19,7 +19,7 @@ export function SecondaryButton(props) {
 export function TextPrompt(props) {
     return (
         <input type="text" className={'textPrompt'} value={props.value} placeholder={props.placeholder}
-               style={props.style}/>
+               style={props.style} onInput={props.onInput}/>
     )
 }
 
