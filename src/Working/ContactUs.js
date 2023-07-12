@@ -1,23 +1,12 @@
 import React, {useState} from "react";
 import "./ContactUs.css";
 import "../Components/utils.css";
-import emailjs from '@emailjs/browser';
+import * as emailjs from "emailjs-com";
 
-
+let API_KEY = "XeTlitGZtOpL_io5X";
 export function Form(props) {
 
-    const form = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -40,8 +29,7 @@ export function Form(props) {
             {/*TODO FIND BETTER WAY TO ALIGN BUTTON TO THE LEFT*/}
             <div style={{textAlign: 'right'}}>
                 <input type="button" className={'PrimaryButton'} style={{width:151, textAlign: 'right'}}
-                        onClick={sendEmail} value="Send">
-                </input>
+                        onClick={() => sendMessage(name,email,message)} value="Send"/>
             </div>
             <div className="flex-container" style={{display: "flex",flexDirection: "row-reverse",marginTop:'20px'}}>
                 <s2 style={{textAlign: 'right'}}>2023</s2>
@@ -51,11 +39,16 @@ export function Form(props) {
     )
 }
 function sendMessage(name, email, message) {
+    var templateParams = {
+        name: name,
+        email: email,
+        message: message
+    }
     alert("Message Sent name: " + name + " email: " + email + " message: " + message + "!");
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
+    emailjs.send('service_daqjvap', 'template_b5mpvfs', templateParams, API_KEY)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+        }, function(error) {
+            console.log('FAILED...', error);
         });
 }
