@@ -1,0 +1,108 @@
+:root {
+    --primary-lighter: #BDE7FF;
+    --primary-light: #7BCFFF;
+    --primary-main: #1F9FE8;
+    --primary-dark: #2083BB;
+    --primary-darker: #115074;
+
+    --secondary-lighter: #89C4E8;
+    --secondary-light: #518BAE;
+    --secondary-main: #24506A;
+    --secondary-dark: #15374A;
+    --secondary-darker: #0B1D27;
+
+    --text-light-primary: #212B36;
+
+    --text-white: #FFF;
+    --default-grey: #8B8B8B;
+
+}
+
+body, html {
+    font-family: "Hanken Grotesk", Helvetica, sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 64px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+s1 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+s2 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+b1{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+b2{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+cap{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 95%;
+}
+
+ovr{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+s1, s2, b1, b2, cap, ovr {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, s1, s2, b1, b2, cap, ovr {
+    color: var(--text-light-primary);
+    text-align: left;
+}
+
+

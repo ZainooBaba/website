@@ -1,0 +1,79 @@
+@import "../standards.css";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap');
+
+.PrimaryButton , .SecondaryButton {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0.5em 1.5em;
+    gap: 0.25em;
+    border-radius: 1.875em;
+    outline: none;
+    border: none;
+
+    /* Text */
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5em;
+    margin: 0.5em;
+}
+
+.PrimaryButton , .SecondaryButton :active {
+    transform: scale(0.98);
+}
+
+.PrimaryButton {
+    background: var(--primary-main);
+    color: var(--text-white);
+}
+
+.PrimaryButton :hover{
+    background: var(--primary-dark);
+}
+
+.SecondaryButton {
+    border: 2px solid var(--secondary-main);
+    background: var(--text-white);
+    color: var(--secondary-main);
+}
+
+.SecondaryButton :hover{
+    background: var(--primary-lighter);
+}
+
+.textPrompt, .paragraphPrompt {
+    font-family: "Hanken Grotesk", Helvetica, sans-serif;
+    display: flex;
+    padding: 8px 16px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 8px;
+    background: var(--text-white);
+    color: var(--default-grey);
+    /* body 1 */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    border: none;
+    margin: 0.5em;
+}
+
+/*TODO FIX HIGHLIGHT ON TEXTBOX*/
+.textPrompt, .paragraphPrompt :focus {
+    border: none;
+    outline: none;
+}
+
+.paragraphPrompt {
+    margin: 0;
+    resize: none;
+    width: 100%;
+    height: 5.875em;
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.wrapper {
+    padding: 8px;
+}

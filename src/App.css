@@ -1,3 +1,5 @@
+@import "standards.css";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap');
 .App {
   text-align: center;
 }
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +37,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+body, html {
+  font-family: "Hanken Grotesk", Helvetica, sans-serif;
 }
