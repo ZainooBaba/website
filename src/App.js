@@ -1,18 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import { PrimaryButton, SecondaryButton, TextPrompt } from './Components/utils.js';
-import { Form } from './Working/ContactUs.js';
+import {ContactUs, Form} from './Working/ContactUs.js';
+import {NavBar} from "./Components/NavBar/NavBar";
+import {Hero} from "./Components/Hero/Hero";
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
+        <Hero/>
       <header className="App-header">
-        <h1>WHATS UP NEWYOURL</h1>
-
-        <PrimaryButton text="Primary Button" />
-        <SecondaryButton text="Secondary Button" />
-          <TextPrompt />
-          <Form />
+          <div style={{display: "flex"}}>
+            <ContactUs />
+            <Form />
+          </div>
       </header>
     </div>
   );

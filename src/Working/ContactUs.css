@@ -17,3 +17,13 @@ h4, s2{
 s2{
     margin-left: 32px;
 }
+
+.contactUs {
+    background: var(--primary-darker);
+}
+
+h2,h6, b1{
+    color: var(--text-white);
+    margin: 0px;
+    /*margin: 8px;*/
+}

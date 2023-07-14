@@ -3,14 +3,25 @@ import "./ContactUs.css";
 import "../Components/utils.css";
 import * as emailjs from "emailjs-com";
 
-let API_KEY = "XeTlitGZtOpL_io5X";
+const API_KEY = "XeTlitGZtOpL_io5X";
 export function Form(props) {
-
-
-
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    function sendMessage(name, email, message) {
+        var templateParams = {
+            name: name,
+            email: email,
+            message: message
+        }
+        emailjs.send('service_daqjvap', 'template_b5mpvfs', templateParams, API_KEY)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    }
+
     return (
         <div className='form'>
             <h4>Let's talk about extending <br/>
@@ -38,17 +49,18 @@ export function Form(props) {
         </div>
     )
 }
-function sendMessage(name, email, message) {
-    var templateParams = {
-        name: name,
-        email: email,
-        message: message
-    }
-    alert("Message Sent name: " + name + " email: " + email + " message: " + message + "!");
-    emailjs.send('service_daqjvap', 'template_b5mpvfs', templateParams, API_KEY)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-        }, function(error) {
-            console.log('FAILED...', error);
-        });
+
+export function ContactUs(props) {
+    return (
+        <div className='contactUs'>
+            <h2>Contact Us<br/><br/></h2>
+            <h6>Phone</h6>
+            <b1>+1 216 798 7336<br/><br/></b1>
+            <h6>Email</h6>
+            <b1>info@codefluent.com<br/><br/></b1>
+            <h6>Corporate Headquarters</h6>
+            <b1>10 Martingale Road, Suite 400, Schaumburg, IL 60173<br/><br/></b1>
+            {/*TODO ADD ICONS*/}
+        </div>
+    )
 }

@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 100vh;
+    width: 577px;
+}
+
+.headtext {
+    width: 100%;
+    margin:0px !important;
+}
+
+.subtext {
+    color: var(--secondary-main);
+    margin: 0;
+    margin-top: 26px;
+    width: 60%;
+}
+
+.actionButton{
+    margin: 0;
+    margin-top: 24px;
+    max-width: fit-content;
+
+    color: var(--secondary-main);
+    text-align: center;
+    /* Button text */
+    font-family: Hanken Grotesk;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 150% */
+
+    border-radius: 30px;
+    border: 2px solid var(--secondary-main);
+    background: var(--text-white);
+
+    display: inline-flex;
+    padding: 6px 23px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.heroImage{
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    /*image-rendering: -webkit-optimize-contrast; !* Webkit (non-standard naming) *!*/
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+
+    width: 530px;
+    height: 322px;
+    flex-shrink: 0;
+
+    border-radius: 30px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding-top: 92px;
+}
+
+.Cont {
+    padding-left: 31px;
+    padding-right: 31px;
+}
