@@ -1,0 +1,72 @@
+.sliderContainer {
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    /*width: 77.5%;*/
+    /*height: 253px;*/
+}
+
+.slider{
+    width: 77.5%;
+    height: 253px;
+
+}
+
+.partnerImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 9px;
+}
+
+.partner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnerContentContainer{
+    padding: 55px 0 75px 0px;
+}
+
+.capHeader{
+    margin-bottom: 12px;
+}
+
+
+.partnerText{
+    text-align: center;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.backdrop{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+
+}
+
+.partnerContainer{
+    position: relative;
+    background: var(--secondary-transparent-16);
+}
+
+.slider-arrow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.arrow-btn {
+    top: 45%;
+    z-index: 1;
+}
+.next {
+    float: right;
+}

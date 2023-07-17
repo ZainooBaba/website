@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './Hero.css'
 import '../utils.css'
-import hero1 from '../../resourses/hero1.png'
+import hero1 from '../../assets/hero1.png'
 
 const headerText = [
     "Maximize your SAP solution",

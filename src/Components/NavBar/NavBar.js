@@ -1,20 +1,20 @@
 import React from "react";
 import {click} from "@testing-library/user-event/dist/click";
 import './NavBar.css'
-import logo from '../../resourses/Logo.svg';
+import logo from '../../assets/Logo.svg';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export function NavBar(props) {
-    function handleClick(location) {
-        alert(location);
-    }
 
     function NavItem(props) {
         return (
-            <li className="nav-item">
-                <s2 className="nav-links" style={props.style} onClick={() => {handleClick(props.text)}}>
+            <li className="nav-item" >
+                <Link to={props.text} smooth={true}>
+                <s2 className="nav-links" style={props.style}>
                     {props.text}
                 </s2>
+                </Link>
             </li>
         )
     }
