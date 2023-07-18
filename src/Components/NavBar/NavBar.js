@@ -22,11 +22,16 @@ export function NavBar(props) {
     return (
         <>
             <nav className="navbar">
-                <div className="nav-container">
-                    <div style={{minWidth:'8.5%'}}/>
-                    <img src={logo} alt="Logo" style={{height:52, margin:16}}/>
-                    <div style={{flex:1}}/>
-                    <ul className={click ? "nav-menu active" : "nav-menu"}>
+                <div className="nav-container" style={{display:'flex', height:50}}>
+                    {/*<div style={{minWidth:'8.5%'}}/>*/}
+                    <div style={{flex:1, height:50}}/>
+                    <div style={{position:"relative", width:639, height:50}}>
+                        <img src={logo} alt="Logo" style={{height:52, position: 'absolute', left:24}}/>
+                    </div>
+                    {/*<div style={{flex:1}}/>*/}
+                    <div style={{position:"relative", width:592, height:50}}>
+                        <div style={{width:900,position: "absolute", right:0, height:50}}>
+                    <ul className={click ? "nav-menu active" : "nav-menu"} style={{right:14, position: "absolute", top:'-40%'}}>
                         <NavItem text="Home" />
                         <NavItem text="What we do" />
                         <NavItem text="Cababilities" />
@@ -35,7 +40,10 @@ export function NavBar(props) {
                         <NavItem text="Partners" />
                         <NavItem text="Contact us" />
                     </ul>
-                    <div style={{minWidth:'8.5%'}}/>
+                        </div>
+                    </div>
+                    <div style={{flex:1, hieght:50}}/>
+                    {/*<div style={{minWidth:'8.5%'}}/>*/}
                 </div>
             </nav>
         </>
