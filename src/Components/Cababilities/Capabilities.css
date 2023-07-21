@@ -1,0 +1,29 @@
+.blueBox{
+    background: var(--primary-dark);
+    border-radius: 30px;
+    position:absolute;
+    outline: 1px solid var(--text-white);
+    /*padding: 5%;*/
+}
+
+.whiteBox{
+    background: var(--text-white);
+    border-radius: 30px;
+    position:absolute;
+    outline: 1px solid var(--primary-light);
+}
+
+.SaaS-solution{
+    width:99.85%;
+    height:31.35%;
+}
+
+.text{
+    color: var(--text);
+}
+
+.headerText{
+    text-align: center;
+    margin-bottom: 75px;
+    color: var(--text);
+}

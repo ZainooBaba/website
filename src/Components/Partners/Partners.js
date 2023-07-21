@@ -6,10 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './Partners.css';
 
-import SAP from "../../assets/SAP.svg";
-import BizBrain from "../../assets/BizBrain.svg";
-import Nitor from "../../assets/Nitor.svg";
-import Google from "../../assets/Google.svg";
+import SAP from "../../assets/partners/SAP.svg";
+import BizBrain from "../../assets/partners/BizBrain.svg";
+import Nitor from "../../assets/partners/Nitor.svg";
+import Google from "../../assets/partners/Google.svg";
 
 import backdrop from "../../assets/partner_backdrop.svg";
 

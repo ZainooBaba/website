@@ -34,7 +34,7 @@ export function NavBar(props) {
                     <ul className={click ? "nav-menu active" : "nav-menu"} style={{right:14, position: "absolute", top:'-40%'}}>
                         <NavItem text="Home" />
                         <NavItem text="What we do" />
-                        <NavItem text="Cababilities" />
+                        <NavItem text="Capabilities" />
                         <NavItem text="Differentators" />
                         <NavItem text="About us" />
                         <NavItem text="Partners" />

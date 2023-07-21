@@ -1,9 +1,9 @@
 import React from "react";
 import './Hero.css'
 import '../utils.css'
-import hero1 from '../../assets/hero1.png'
-import hero2 from '../../assets/hero3.png'
-import hero3 from '../../assets/hero2.png'
+import hero1 from '../../assets/hero/hero1.png'
+import hero2 from '../../assets/hero/hero3.png'
+import hero3 from '../../assets/hero/hero2.png'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -79,7 +79,7 @@ export class Hero extends React.Component {
                         className={"heroImage"}
                         useTransform={false}
                         // autoplaySpeed={500}
-                        // autoplay={true}
+                        autoplay={true}
                         focusOnSelect={false}
                         afterChange={current => this.setState({activeSlide: current})}
                         appendDots={ dots => <ul className={"babab"}>{dots}</ul>}
