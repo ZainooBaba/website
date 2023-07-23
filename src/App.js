@@ -6,6 +6,7 @@ import {Partners} from "./Components/Partners/Partners";
 import {WhatWeDo} from "./Components/WhatWeDo/whatWeDo";
 import {Capabilities} from "./Components/Cababilities/Capabilities";
 import {Differentators} from "./Components/Differentators/Differentators";
+import {Careers} from "./Components/Careers/Careers";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <section id="Differentators"><Differentators/></section>
         <div style={{height: 120}}/>
         <section id="Partners"><Partners/></section>
+        <div style={{height: 25}}/>
+        <section id="Careers"><Careers/></section>
       <header className="App-header">
           <div style={{display: "flex"}}>
             <ContactUs />
