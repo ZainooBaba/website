@@ -94,7 +94,7 @@ export function Form(props) {
       {!userSuccessMessage && <div style={{textAlign: 'right'}}>
         <input type="button"
                className={'PrimaryButton'}
-               style={{width: 151, textAlign: 'right'}}
+               style={{width: 151}}
                onClick={() => sendMessage(name, email, message)}
                value="Send"
                disabled={processing}
