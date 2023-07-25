@@ -9,7 +9,7 @@ export function Careers(){
     return(
         <div style={{marginTop:100}}>
             <div style={{display: "flex", height: '400px'}}>
-                <div style={{width: "9.5%", height: '400px'}}/>
+              <div className='bufferSizeZone' />
                 <div style={{flex:1, height: '400px', position:'relative'}}>
                     <img src={background} style={{width:"100%", position:"absolute", top:0,left:0}}/>
                     <div style={{width:"100%", position:"absolute", top:'6.8%',left:0}}>
@@ -29,7 +29,7 @@ export function Careers(){
                     {/*    </div>*/}
                     {/*</div>*/}
                 </div>
-                <div style={{width: "9.5%"}}/>
+              <div className='bufferSizeZone' />
             </div>
         </div>
     )

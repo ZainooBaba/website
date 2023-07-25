@@ -1,0 +1,41 @@
+@import "../../standards.css";
+/*.form {*/
+/*    background: var(--primary-darker);*/
+/*    width: 497px;*/
+/*    max-width: 100vw;*/
+/*}*/
+
+.contact-us-col1 {
+    flex-grow:1;
+}
+
+.contact-us-col2 {
+    width: 497px;
+    max-width: 50%;
+}
+
+.flex-container {
+    width: 100%;
+}
+
+.social-media {
+    width: 100%;
+    display: flex;
+}
+
+.social-media a { display: block; width: 24px; height: 24px; margin-right: 40px;}
+
+h4, s2{
+    color: var(--text-white);
+    margin: 8px;
+}
+
+s2{
+    margin-left: 32px;
+}
+
+h2,h6, b1{
+    color: var(--text-white);
+    margin: 0px;
+    /*margin: 8px;*/
+}
