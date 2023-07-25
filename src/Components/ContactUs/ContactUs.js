@@ -22,14 +22,19 @@ export function Form(props) {
       message: message
     }
 
+    console.log('templateParams:\n', templateParams);
+    return ;
+    //Thank you for contacting us!
+    //Please complete required fields
+
     setProcessing(true);
     emailjs.send('service_daqjvap', 'template_b5mpvfs', templateParams, API_KEY)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
-        // setProcessing(false);
+        setProcessing(false);
       }, function(error) {
         console.log('FAILED...', error);
-        // setProcessing(false);
+        setProcessing(false);
       });
   }
 
@@ -79,9 +84,10 @@ export function Contacts(props) {
       <div style={{height:'40px'}}></div>
 
       <div className="social-media" style={{display: "flex", flexDirection: "row", marginTop:'20px'}}>
-        <a href="#" target="_blank"><img src={iconLinkedin} border="0" alt="" width="24" height="24"/></a>
-        <a href="#" target="_blank"><img src={iconFacebook} border="0" alt="" width="24" height="24"/></a>
-        <a href="#" target="_blank"><img src={iconTwitter} border="0"  alt="" width="24" height="24"/></a>
+        <a href="https://www.linkedin.com/company/code-fluent" target="_blank"><img src={iconLinkedin} border="0" alt="" width="24" height="24"/></a>
+        {/* @todo: the rest of icons and page */}
+        <a href="https://www.facebook.com" target="_blank"><img src={iconFacebook} border="0" alt="" width="24" height="24"/></a>
+        <a href="https://www.twitter.com"  target="_blank"><img src={iconTwitter} border="0"  alt="" width="24" height="24"/></a>
       </div>
     </div>
   )
@@ -90,7 +96,6 @@ export function Contacts(props) {
 export default function ContactUs(props) {
   return (
     <div style={{display: "flex", position:"relative"}}>
-      {/*<div className='bufferSizeZone' />*/}
       <div style={{width: "100%"}}>
 
         <div className="centerIt">
@@ -106,7 +111,6 @@ export default function ContactUs(props) {
         </div>
 
       </div>
-      {/*<div className='bufferSizeZone' />*/}
     </div>
   )
 }
