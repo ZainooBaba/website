@@ -8,8 +8,8 @@ export function WhatWeDo(){
     return (
         <div style={{marginTop:100}}>
             <div style={{display: "flex", height: '400px'}}>
-                <div className='bufferSizeZone' />
-                <div style={{flex:1, height: '400px'}}>
+
+                <div style={{flex:1, height: '400px'}} className="centerIt">
                     <div style={{display: "flex", position:"relative", height:"fit-content"}}>
                         <img src={background} style={{width:"100%", position:"absolute", minHeight:"120%"}}/>
                         <img src={corner} style={{position:"absolute", left: "31.85%", top: "-5.3%"}}/>
@@ -39,7 +39,7 @@ export function WhatWeDo(){
                         </div>
                     </div>
                 </div>
-                <div className='bufferSizeZone' />
+
             </div>
         </div>
     )

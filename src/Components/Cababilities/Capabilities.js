@@ -23,8 +23,8 @@ export function Capabilities() {
         <div style={{marginTop: 100, height:'fit-content'}}>
             <h2 className={"headerText"}>Capabilities</h2>
             <div style={{display: "flex", height: 'fit-content'}}>
-              <div className='bufferSizeZone' />
-              <div style={{flex: 1, height: 'fit-content', position:"relative"}}>
+
+              <div style={{flex: 1, height: 'fit-content', position:"relative"}} className="centerIt">
                     <div style={{display: 'flex'}}>
                         <LeftFlowChart/>
                         <div style={{height: 500, width: 52, position: 'relative'}}/>
@@ -35,7 +35,7 @@ export function Capabilities() {
                         <img src={moon} alt={"hero"} style={{top:"22%", left: "13%", position: "absolute", width:'auto', zIndex:-1}}/>
                     </div>
                 </div>
-              <div className='bufferSizeZone' />
+
             </div>
         </div>
     )

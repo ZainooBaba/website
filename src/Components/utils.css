@@ -32,6 +32,11 @@
     background: var(--primary-dark);
 }
 
+.PrimaryButton:disabled{
+    background: var(--primary-dark);
+    color: var(--primary-lighter);
+}
+
 .SecondaryButton {
     border: 2px solid var(--secondary-main);
     background: var(--text-white);

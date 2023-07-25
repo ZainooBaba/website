@@ -12,17 +12,24 @@ export function Form(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [processing, setProcessing] = useState(false);
+
+
   function sendMessage(name, email, message) {
     var templateParams = {
       name: name,
       email: email,
       message: message
     }
+
+    setProcessing(true);
     emailjs.send('service_daqjvap', 'template_b5mpvfs', templateParams, API_KEY)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
+        // setProcessing(false);
       }, function(error) {
         console.log('FAILED...', error);
+        // setProcessing(false);
       });
   }
 
@@ -43,8 +50,13 @@ export function Form(props) {
       </div>
       {/*TODO FIND BETTER WAY TO ALIGN BUTTON TO THE LEFT*/}
       <div style={{textAlign: 'right'}}>
-        <input type="button" className={'PrimaryButton'} style={{width:151, textAlign: 'right'}}
-               onClick={() => sendMessage(name,email,message)} value="Send"/>
+        <input type="button"
+               className={'PrimaryButton'}
+               style={{width:151, textAlign: 'right'}}
+               onClick={() => sendMessage(name,email,message)}
+               value="Send"
+               disabled={processing}
+        />
       </div>
       <div className="flex-container" style={{display: "flex",flexDirection: "row-reverse",marginTop:'20px'}}>
         <s2 style={{textAlign: 'right'}}>2023</s2>
