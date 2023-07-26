@@ -29,23 +29,23 @@ export class Hero extends React.Component {
 
     render() {
         const HeroText1 =
-            <div className={'container Cont'}>
+            <div className={'container'}>
                 <h1 className={'headtext'}>{headerText[0]}</h1>
                 <h4 className={'subtext'}>{subText[0]}</h4>
                 {/*{count}*/}
-                <a className={"SecondaryButton actionButton"} href="#" >{"Let’s discuss"}</a>
+                <a className={"SecondaryButton actionButton"} href="#contact-us-form" >{"Let’s discuss"}</a>
             </div>
 
         const HeroText2 =
-            <div className={'container Cont'}>
+            <div className={'container'}>
                 <h1 className={'headtext'}>{headerText[1]}</h1>
                 <h4 className={'subtext2'}>{subText[1]}</h4>
                 {/*{count}*/}
-                <a className={"SecondaryButton actionButton"} href="#" >{"Let’s discuss"}</a>
+                <a className={"SecondaryButton actionButton"} href="#contact-us-form" >{"Let’s discuss"}</a>
             </div>
 
         const HeroText3 =
-            <div className={'container Cont'}>
+            <div className={'container'}>
                 <div style={{display: 'flex', alignContent: 'flex-end'}}>
                     <div style={{width: '52.5%'}}>
                         <h1 className={'headtext3'}>{headerText[2]}</h1>
@@ -56,7 +56,7 @@ export class Hero extends React.Component {
                     </div>
                 </div>
                 {/*{count}*/}
-                <a className={"SecondaryButton actionButton"} href="#" >{"Let’s discuss"}</a>
+                <a className={"SecondaryButton actionButton"} href="#contact-us-form" >{"Let’s discuss"}</a>
             </div>
 
         const HeroText = () => {
@@ -72,7 +72,7 @@ export class Hero extends React.Component {
 
 
         const HeroImage =
-            <div className={'Cont'}>
+            <div className="heroImageContainer">
                 <Slider dots={true}
                         infinite={true}
                         slidesPerRow={1}
@@ -102,11 +102,13 @@ export class Hero extends React.Component {
             </div>
 
         return (
-            <div className={'hero'}>
-                <div style={{flex: 1}}/>
+            <div className="hero flex-container">
+              <div className="flex-col-50">
                 <HeroText/>
+              </div>
+              <div className="flex-col-50">
                 {HeroImage}
-                <div style={{flex: 1}}/>
+              </div>
             </div>
         )
     }

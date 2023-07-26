@@ -1,0 +1,31 @@
+#Careers {
+    margin-top: 100px;
+    position: relative;
+}
+
+#Careers {
+    height: 503px;
+    position: relative;
+}
+
+#Careers .caption {
+    position: absolute;
+    top: 25px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#Careers .CareersImg {
+    width: 227px;
+    height: 197px;
+    display: block;
+    margin-left: 38px;
+}
+
+#Careers .CareersBox {
+    width: 309px;
+    display: block;
+}
+
+/*textAlign:'center', position:"absolute", top: '25px', left:0*/

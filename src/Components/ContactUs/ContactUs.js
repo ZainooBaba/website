@@ -67,7 +67,7 @@ export function Form(props) {
   }
 
   return (
-    <div className='form'>
+    <div className='form' id="contact-us-form">
       <h4>Let's talk about extending <br/>the value of SAP</h4>
 
       <div className="flex-container" style={{display: "flex"}}>
@@ -118,14 +118,14 @@ export function Contacts(props) {
   )
 }
 
-export default function ContactUs(props) {
+export default function ContactUs() {
   return (
     <div style={{display: "flex", position:"relative"}}>
       <div style={{width: "100%"}}>
 
         <div className="centerIt">
           <div style={{width:'100%', marginTop: '43px'}}><h2>Contact Us</h2></div>
-          <div style={{display: "flex"}}>
+          <div className="flex-container">
             <div className="contact-us-col1">
               <Contacts />
             </div>
@@ -134,9 +134,9 @@ export default function ContactUs(props) {
             </div>
           </div>
 
-          <div style={{width: '100%', display: "flex"}}>
-            <div style={{width: '49%'}}>
-              <div className="social-media" style={{display: "flex", flexDirection: "row", marginTop:'20px'}}>
+          <div className="flex-container" style={{marginTop:'20px'}}>
+            <div className="flex-col-50">
+              <div className="social-media">
                 <a href="https://www.linkedin.com/company/code-fluent" target="_blank"><img src={iconLinkedin} border="0" alt="" width="24" height="24"/></a>
                 {/* @todo: the rest of icons and page */}
                 <a href="https://www.facebook.com" target="_blank"><img src={iconFacebook} border="0" alt="" width="24" height="24"/></a>
@@ -144,8 +144,8 @@ export default function ContactUs(props) {
               </div>
             </div>
 
-            <div style={{width: '49%'}}>
-              <div className="flex-container" style={{display: "flex",flexDirection: "row-reverse",marginTop:'20px'}}>
+            <div className="flex-col-50">
+              <div className="copyrights" style={{display: "flex",flexDirection: "row-reverse"}}>
                 <s2 style={{textAlign: 'right'}}>2023</s2>
                 <s2 style={{textAlign: 'right'}}>All Rights Reserved</s2>
               </div>

@@ -9,12 +9,13 @@ import {Differentators} from "./Components/Differentators/Differentators";
 import {Careers} from "./Components/Careers/Careers";
 
 import bgFooter from "./assets/footer.svg";
+import bgCareers from "./assets/careers/bkgrd.svg";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-        <Hero/>
+        <section id="Hero" className="centerIt"><Hero/></section>
         <section id="WhatWeDo"><WhatWeDo/></section>
 
         <div style={{height: 100}}/>
@@ -27,9 +28,13 @@ function App() {
         <section id="Partners"><Partners/></section>
 
         <div style={{height: 25}}/>
-        <section id="Careers"><Careers/></section>
+        <section id="Careers" style={{backgroundImage: `url(${bgCareers})`}} className="bgAble centerIt">
+          <Careers />
+        </section>
 
-        <section id="footer" style={{backgroundImage: `url(${bgFooter})`}}><ContactUs/></section>
+        <section id="footer" style={{backgroundImage: `url(${bgFooter})`}} className="bgAble">
+          <ContactUs/>
+        </section>
     </div>
   );
 }
