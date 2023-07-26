@@ -33,7 +33,7 @@ export class Hero extends React.Component {
                 <h1 className={'headtext'}>{headerText[0]}</h1>
                 <h4 className={'subtext'}>{subText[0]}</h4>
                 {/*{count}*/}
-                <input type={"button"} className={"SecondaryButton actionButton"} value={"Let’s discuss"}/>
+                <a className={"SecondaryButton actionButton"} href="#" >{"Let’s discuss"}</a>
             </div>
 
         const HeroText2 =
@@ -41,7 +41,7 @@ export class Hero extends React.Component {
                 <h1 className={'headtext'}>{headerText[1]}</h1>
                 <h4 className={'subtext2'}>{subText[1]}</h4>
                 {/*{count}*/}
-                <input type={"button"} className={"SecondaryButton actionButton"} value={"Let’s discuss"}/>
+                <a className={"SecondaryButton actionButton"} href="#" >{"Let’s discuss"}</a>
             </div>
 
         const HeroText3 =
@@ -56,7 +56,7 @@ export class Hero extends React.Component {
                     </div>
                 </div>
                 {/*{count}*/}
-                <input type={"button"} className={"SecondaryButton actionButton"} value={"Let’s discuss"}/>
+                <a className={"SecondaryButton actionButton"} href="#" >{"Let’s discuss"}</a>
             </div>
 
         const HeroText = () => {

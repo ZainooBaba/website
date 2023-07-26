@@ -2,15 +2,14 @@ import background from "../../assets/whatWeDo-background.svg";
 import corner from "../../assets/corner.svg";
 import circle from "../../assets/graphic.svg";
 import crescent from "../../assets/graphic2.svg";
-import logo from "../../assets/Logo.svg";
 import React from "react";
 
 export function WhatWeDo(){
-    return(
+    return (
         <div style={{marginTop:100}}>
             <div style={{display: "flex", height: '400px'}}>
-                <div style={{width: "9.5%", height: '400px'}}/>
-                <div style={{flex:1, height: '400px'}}>
+
+                <div style={{flex:1, height: '400px'}} className="centerIt">
                     <div style={{display: "flex", position:"relative", height:"fit-content"}}>
                         <img src={background} style={{width:"100%", position:"absolute", minHeight:"120%"}}/>
                         <img src={corner} style={{position:"absolute", left: "31.85%", top: "-5.3%"}}/>
@@ -40,7 +39,7 @@ export function WhatWeDo(){
                         </div>
                     </div>
                 </div>
-                <div style={{width: "9.5%"}}/>
+
             </div>
         </div>
     )

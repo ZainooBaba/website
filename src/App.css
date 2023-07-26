@@ -15,11 +15,34 @@
   }
 }
 
-.App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.bufferSizeZone {
+  height: 100%;
+  width: 9.5%;
+}
+
+.centerIt {
+  margin-left: 9.5%;
+  margin-right: 9.5%;
+  width: 81%;
+}
+
+#footer {
+  /*min-height: 100vh;*/
+  min-height: 519px;
+  margin-top: 220px; /* @todo */
+
+  width: 100%;
+  bottom: 0;
+  display: block;
+
+  /*flex-direction: column;*/
+
+  /** background */
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  /** fonts */
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -29,6 +52,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {

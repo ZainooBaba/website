@@ -1,5 +1,5 @@
 import './App.css';
-import {ContactUs, Form} from './Working/ContactUs.js';
+import ContactUs from './Components/ContactUs/ContactUs';
 import {NavBar} from "./Components/NavBar/NavBar";
 import {Hero} from "./Components/Hero/Hero";
 import {Partners} from "./Components/Partners/Partners";
@@ -8,26 +8,28 @@ import {Capabilities} from "./Components/Cababilities/Capabilities";
 import {Differentators} from "./Components/Differentators/Differentators";
 import {Careers} from "./Components/Careers/Careers";
 
+import bgFooter from "./assets/footer.svg";
+
 function App() {
   return (
     <div className="App">
       <NavBar />
         <Hero/>
-        <section id="What we do"><WhatWeDo/></section>
+        <section id="WhatWeDo"><WhatWeDo/></section>
+
         <div style={{height: 100}}/>
         <section id="Capabilities"><Capabilities/></section>
+
         <div style={{height: 120}}/>
         <section id="Differentators"><Differentators/></section>
+
         <div style={{height: 120}}/>
         <section id="Partners"><Partners/></section>
+
         <div style={{height: 25}}/>
         <section id="Careers"><Careers/></section>
-      <header className="App-header">
-          <div style={{display: "flex"}}>
-            <ContactUs />
-            <Form />
-          </div>
-      </header>
+
+        <section id="footer" style={{backgroundImage: `url(${bgFooter})`}}><ContactUs/></section>
     </div>
   );
 }

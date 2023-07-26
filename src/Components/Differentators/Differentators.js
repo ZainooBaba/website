@@ -7,8 +7,7 @@ import line from '../../assets/diff/whiteLine.svg';
 export function Differentators() {
     return (
         <div style={{display: "flex", height: '400px'}}>
-            <div style={{width: "9.5%", height: '400px'}}/>
-            <div style={{flex: 1, height: '400px', position: "relative"}}>
+            <div style={{flex: 1, height: '400px', position: "relative"}} className="centerIt">
                 <h2 className={"text"} style={{marginBottom:25}}>Differentiators</h2>
                 <div style={{position: "relative"}}>
                 <img src={background}/>
@@ -46,7 +45,6 @@ export function Differentators() {
                 </div>
             </div>
             </div>
-            <div style={{width: "9.5%", height: '400px'}}/>
         </div>
     )
 }
