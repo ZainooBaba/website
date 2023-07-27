@@ -32,12 +32,13 @@ export function NavBar(props) {
                     <div style={{position:"relative", width:592, height:50}}>
                         <div style={{width:900,position: "absolute", right:0, height:50}}>
                     <ul className={click ? "nav-menu active" : "nav-menu"} style={{right:14, position: "absolute", top:'-40%'}}>
-                        <NavItem text="Home" />
+                        {/*<NavItem text="Home" />*/}
                         <NavItem text="What we do" />
                         <NavItem text="Capabilities" />
                         <NavItem text="Differentators" />
                         <NavItem text="About us" />
                         <NavItem text="Partners" />
+                        <NavItem text="Careers" />
                         <NavItem text="Contact us" />
                     </ul>
                         </div>

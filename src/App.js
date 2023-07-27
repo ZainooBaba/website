@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <NavBar />
         <section id="Hero" className="centerIt"><Hero/></section>
-        <section id="WhatWeDo"><WhatWeDo/></section>
+        <section id="What we do"><WhatWeDo/></section>
 
         <div style={{height: 100}}/>
         <section id="Capabilities"><Capabilities/></section>
@@ -32,7 +32,7 @@ function App() {
           <Careers />
         </section>
 
-        <section id="footer" style={{backgroundImage: `url(${bgFooter})`}} className="bgAble">
+        <section id="Contact us" style={{backgroundImage: `url(${bgFooter})`}} className="bgAble">
           <ContactUs/>
         </section>
     </div>
