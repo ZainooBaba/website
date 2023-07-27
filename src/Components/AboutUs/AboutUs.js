@@ -25,12 +25,12 @@ function AboutUsTop() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 function AboutUsBottom() {
   return (
-    <div className="flex-container">
+    <div className="flex-container about-us-tiles">
 
       <div className="about-us-tile">
         <div>
@@ -60,7 +60,7 @@ function AboutUsBottom() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 
@@ -71,5 +71,5 @@ export function AboutUs () {
       <div className="about-us-line" style={{backgroundImage: `url(${line})`}}/>
       <AboutUsBottom />
     </div>
-  );
-};
+  )
+}
