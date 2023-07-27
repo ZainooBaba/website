@@ -1,0 +1,18 @@
+.about-us-col1 {
+    height: 416px;
+    width: calc(647px - var(--center-margin));
+}
+
+.about-us-col1 img {
+    /*position: absolute;*/
+    /*left: calc(257px - 138px);*/
+    /*top: 0px;*/
+}
+
+.about-us-col2 {
+    width: 497px;
+}
+
+.about-us-content {
+    margin-top: 24px;
+}

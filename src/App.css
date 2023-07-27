@@ -1,5 +1,8 @@
 @import "standards.css";
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap');
+:root {
+
+}
 
 body, html {
   font-family: "Hanken Grotesk", Helvetica, sans-serif;
@@ -15,9 +18,9 @@ body {
 }
 
 .centerIt {
-  margin-left: 9.5%;
-  margin-right: 9.5%;
-  width: 81%;
+  margin-left: var(--center-margin);
+  margin-right: var(--center-margin);
+  /*width: 81%;*/
 }
 
 .flex-container {
@@ -43,6 +46,15 @@ body {
 
 .flex-col-50 {
   width: 50%;
+}
+
+.flex-col-min-50-grow {
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+.flex-col-max-50 {
+  max-width: 50%;
 }
 
 .App {
@@ -80,7 +92,6 @@ body {
   color: #61dafb;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -90,3 +101,19 @@ body {
   }
 }
 
+.section-header {
+  width: 100%;
+  margin-top: 43px;
+}
+
+.margin-100 {
+  margin-top: 100px;
+}
+
+.margin-120 {
+  margin-top: 120px;
+}
+
+.margin-125 {
+  margin-top: 125px;
+}

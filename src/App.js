@@ -7,6 +7,7 @@ import {WhatWeDo} from "./Components/WhatWeDo/whatWeDo";
 import {Capabilities} from "./Components/Cababilities/Capabilities";
 import {Differentators} from "./Components/Differentators/Differentators";
 import {Careers} from "./Components/Careers/Careers";
+import {AboutUs} from "./Components/AboutUs/AboutUs";
 
 import bgFooter from "./assets/footer.svg";
 import bgCareers from "./assets/careers/bkgrd.svg";
@@ -16,23 +17,21 @@ function App() {
     <div className="App">
       <NavBar />
         <section id="Hero" className="centerIt"><Hero/></section>
-        <section id="What we do"><WhatWeDo/></section>
+        <section id="WhatWeDo" className="margin-100"><WhatWeDo/></section>
 
-        <div style={{height: 100}}/>
         <section id="Capabilities"><Capabilities/></section>
 
-        <div style={{height: 120}}/>
-        <section id="Differentators"><Differentators/></section>
+        <section id="Differentators" className="margin-120"><Differentators/></section>
 
-        <div style={{height: 120}}/>
-        <section id="Partners"><Partners/></section>
+        <section id="AboutUs" className="centerIt margin-100"><AboutUs/></section>
 
-        <div style={{height: 25}}/>
-        <section id="Careers" style={{backgroundImage: `url(${bgCareers})`}} className="bgAble centerIt">
+        <section id="Partners" className="margin-120"><Partners/></section>
+
+        <section id="Careers" style={{backgroundImage: `url(${bgCareers})`}} className="bgAble centerIt margin-125">
           <Careers />
         </section>
 
-        <section id="Contact us" style={{backgroundImage: `url(${bgFooter})`}} className="bgAble">
+        <section id="footer" style={{backgroundImage: `url(${bgFooter})`}} className="bgAble">
           <ContactUs/>
         </section>
     </div>
