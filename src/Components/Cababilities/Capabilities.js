@@ -50,17 +50,21 @@ function LeftFlowChart() {
             />
             <Arrow src={arrow1} left={'82.5%'} top={'30.7%'}/>
             <Extra left={'20%'} top={'23.8%'}/>
-            <Arrow src={arrow2} left={'66%'} top={'48.6%'}/>
-            <WhiteBox width={'43%'} height={'20%'} left={'42%'} top={'29%'} zIndex={2}
-                      header={"SaaS Solutions"} text={"SAP Ariba"}/>
+
+            <Arrow src={arrow2} left={'66%'} top={'48.6%'} zIndex={2}/>
+            <WhiteBox width={'43%'} height={'26%'} left={'42%'} top={'29%'} zIndex={2}
+                      header={"SaaS Solutions"} text={"SAP Ariba, Fieldglass and Concur"}/>
+
             <Arrow src={arrow3} left={'-0.3%'} top={'56.6%'}/>
             <Extra left={'43%'} top={'45.5%'}/>
+
             <WhiteBox width={'62.7%'} height={'25.7%'} left={'0%'} top={'45.7%'} zIndex={1}
                       header={"SaaS Solutions"} text={"SAP Intelligent Spend & Business Network"}/>
             <Extra left={'11.8%'} top={'63.7%'}/>
+
             <WhiteBox width={'58.5%'} height={'26%'} left={'25.7%'} top={'69.5%'} zIndex={2}
                       header={"SaaS Solutions"}
-                      text={"SAP Supply Chain Collaboration SAP Supply Chain Planning"}/>
+                      text={"SAP Supply Chain Collaboration and Planning"}/>
 
         </div>
     )
@@ -140,7 +144,7 @@ function Extra(props) {
 function Arrow(props) {
     return (
         <img src={props.src} alt={"hero"} style={{
-            zIndex: 3, position: 'absolute', left: props.left, top: props.top
+            zIndex: props.zIndex ? props.zIndex : 3, position: 'absolute', left: props.left, top: props.top
             , opacity: 0.2
         }}/>
     )
