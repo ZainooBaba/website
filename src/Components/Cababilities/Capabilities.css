@@ -15,7 +15,7 @@
     background: var(--text-white);
     border-radius: 30px;
     position:absolute;
-    outline: 1px solid var(--primary-light);
+    border: 1px solid var(--primary-light);
 }
 
 .SaaS-solution{
