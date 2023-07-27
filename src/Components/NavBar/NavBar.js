@@ -10,7 +10,7 @@ export function NavBar(props) {
     function NavItem(props) {
         return (
             <li className="nav-item" >
-                <Link to={props.text} smooth={true}>
+                <Link to={props.toID?props.toID:props.text} smooth={true}>
                 <s2 className="nav-links" style={props.style}>
                     {props.text}
                 </s2>
@@ -33,13 +33,13 @@ export function NavBar(props) {
                         <div style={{width:900,position: "absolute", right:0, height:50}}>
                     <ul className={click ? "nav-menu active" : "nav-menu"} style={{right:14, position: "absolute", top:'-40%'}}>
                         {/*<NavItem text="Home" />*/}
-                        <NavItem text="What we do" />
+                        <NavItem text="What we do" toID={"WhatWeDo"}/>
                         <NavItem text="Capabilities" />
                         <NavItem text="Differentators" />
-                        <NavItem text="About us" />
+                        <NavItem text="About us" toID={"AboutUs"}/>
                         <NavItem text="Partners" />
                         <NavItem text="Careers" />
-                        <NavItem text="Contact us" />
+                        <NavItem text="Contact us" toID={"footer"}/>
                     </ul>
                         </div>
                     </div>
