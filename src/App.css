@@ -117,3 +117,7 @@ body {
 .margin-125 {
   margin-top: 125px;
 }
+
+.pointer {
+  cursor: pointer;
+}

@@ -9,6 +9,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { Link } from "react-scroll";
 
 const headerText = [
     "Maximize your SAP solution",
@@ -22,6 +23,10 @@ const subText = [
     "...your supply chain"
 ]
 
+function LetsDiscuss() {
+  return (<Link to="footer" smooth={true} className={"SecondaryButton actionButton pointer"}>{"Let’s discuss"}</Link>);
+}
+
 export class Hero extends React.Component {
     state = {
         activeSlide: 0,
@@ -33,7 +38,7 @@ export class Hero extends React.Component {
                 <h1 className={'headtext'}>{headerText[0]}</h1>
                 <h4 className={'subtext'}>{subText[0]}</h4>
                 {/*{count}*/}
-                <a className={"SecondaryButton actionButton"} href="#contact-us-form" >{"Let’s discuss"}</a>
+                <LetsDiscuss />
             </div>
 
         const HeroText2 =
@@ -41,7 +46,7 @@ export class Hero extends React.Component {
                 <h1 className={'headtext'}>{headerText[1]}</h1>
                 <h4 className={'subtext2'}>{subText[1]}</h4>
                 {/*{count}*/}
-                <a className={"SecondaryButton actionButton"} href="#contact-us-form" >{"Let’s discuss"}</a>
+                <LetsDiscuss />
             </div>
 
         const HeroText3 =
@@ -56,7 +61,7 @@ export class Hero extends React.Component {
                     </div>
                 </div>
                 {/*{count}*/}
-                <a className={"SecondaryButton actionButton"} href="#contact-us-form" >{"Let’s discuss"}</a>
+                <LetsDiscuss />
             </div>
 
         const HeroText = () => {
