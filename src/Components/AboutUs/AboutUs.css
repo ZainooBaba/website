@@ -16,3 +16,46 @@
 .about-us-content {
     margin-top: 24px;
 }
+
+.about-us-line {
+    display: block;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 64px;
+    margin-bottom: 28px;
+}
+
+.about-us-tile {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.about-us-tile h6 {
+    margin-bottom: 8px;
+}
+
+.about-us-tile:last-child {
+    margin-right: 0; /* Remove margin-right on last item */
+}
+
+.about-us-tile:nth-child(1) {
+    width: 231px;
+}
+
+.about-us-tile:nth-child(2),
+.about-us-tile:nth-child(4) {
+    width: 248px;
+}
+
+.about-us-tile:nth-child(3) {
+    flex-grow: 1;
+    min-width: 25%;
+}
+
+.about-us-tile div {
+    border: 1px solid var(--primary-light);
+    border-radius: 24px;
+    padding: 24px;
+}
