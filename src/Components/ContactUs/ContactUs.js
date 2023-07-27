@@ -128,7 +128,7 @@ export default function ContactUs() {
       <div style={{width: "100%"}}>
 
         <div className="centerIt">
-          <div style={{width:'100%', marginTop: '43px'}}><h2>Contact Us</h2></div>
+          <div className="section-header"><h2>Contact Us</h2></div>
           <div className="flex-container">
             <div className="contact-us-col1 flex-col-min-50-grow">
               <Contacts />
@@ -141,7 +141,6 @@ export default function ContactUs() {
           <div className="flex-container" style={{marginTop:'20px'}}>
             <div className="flex-col-50">
               <div className="social-media">
-
                 {SOCIAL_LINKEDIN_URL && <a href={SOCIAL_LINKEDIN_URL} target="_blank"><img src={iconLinkedin} border="0" alt="" width="24" height="24"/></a>}
                 {SOCIAL_FACEBOOK_URL && <a href={SOCIAL_FACEBOOK_URL} target="_blank"><img src={iconFacebook} border="0" alt="" width="24" height="24"/></a>}
                 {SOCIAL_TWITTER_URL && <a href={SOCIAL_TWITTER_URL}  target="_blank"><img src={iconTwitter} border="0"  alt="" width="24" height="24"/></a>}

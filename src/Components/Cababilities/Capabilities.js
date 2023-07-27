@@ -20,7 +20,7 @@ import moon from "../../assets/capabilities/arrows/moon.svg";
 
 export function Capabilities() {
     return (
-        <div style={{marginTop: 100, height:'fit-content'}}>
+        <div style={{height:'fit-content'}}>
             <h2 className={"headerText"}>Capabilities</h2>
             <div style={{display: "flex", height: 'fit-content'}}>
 
@@ -146,7 +146,7 @@ function Arrow(props) {
     )
 }
 
-function Footer(props) {
+function Footer() {
     return (
         <div style={{height: "fit-content", width: '100%', position:"relative", marginTop:25}}>
             <img src={bckgrd} alt={"hero"} style={{width: '100%', left:0}}/>

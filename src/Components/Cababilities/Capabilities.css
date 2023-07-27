@@ -1,3 +1,8 @@
+#Capabilities {
+    /*64px + (64px - 28px)/2*/
+    margin-top: -82px;
+}
+
 .blueBox{
     background: var(--primary-dark);
     border-radius: 30px;
