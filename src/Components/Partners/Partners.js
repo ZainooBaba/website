@@ -82,9 +82,6 @@ export class Partners extends React.Component {
                             <div className={"sliderCard"}><Partner index={1}/></div>
                             <div className={"sliderCard"}><Partner index={2}/></div>
                             <div className={"sliderCard"}><Partner index={3}/></div>
-                            <div className={"sliderCard"}><Partner index={2}/></div>
-                            <div className={"sliderCard"}><Partner index={1}/></div>
-                            <div className={"sliderCard"}><Partner index={1}/></div>
                         </Slider>
                     </div>
                     {/*<div/>*/}
