@@ -130,10 +130,10 @@ export default function ContactUs() {
         <div className="centerIt">
           <div className="section-header"><h2>Contact Us</h2></div>
           <div className="flex-container">
-            <div className="contact-us-col1 flex-col-min-50-grow">
+            <div className="contact-us-col">
               <Contacts />
             </div>
-            <div className="contact-us-col2 flex-col-max-50">
+            <div className="contact-us-col">
               <Form />
             </div>
           </div>
