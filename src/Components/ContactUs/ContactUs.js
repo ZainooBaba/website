@@ -18,6 +18,10 @@ const MESSAGE_ERR_GENERAL = 'An Error Occurred.';
 
 const SUCCESS_MESSAGE_HIDE_DELAY = 10 * 1000;
 
+const SOCIAL_LINKEDIN_URL = 'https://www.linkedin.com/company/code-fluent';
+const SOCIAL_TWITTER_URL = 'https://twitter.com/_CodeFluent';
+const SOCIAL_FACEBOOK_URL = '';//@todo: enter valid CF's url
+
 export function Form(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -137,10 +141,10 @@ export default function ContactUs() {
           <div className="flex-container" style={{marginTop:'20px'}}>
             <div className="flex-col-50">
               <div className="social-media">
-                <a href="https://www.linkedin.com/company/code-fluent" target="_blank"><img src={iconLinkedin} border="0" alt="" width="24" height="24"/></a>
-                {/* @todo: the rest of icons and page */}
-                <a href="https://www.facebook.com" target="_blank"><img src={iconFacebook} border="0" alt="" width="24" height="24"/></a>
-                <a href="https://www.twitter.com"  target="_blank"><img src={iconTwitter} border="0"  alt="" width="24" height="24"/></a>
+
+                {SOCIAL_LINKEDIN_URL && <a href={SOCIAL_LINKEDIN_URL} target="_blank"><img src={iconLinkedin} border="0" alt="" width="24" height="24"/></a>}
+                {SOCIAL_FACEBOOK_URL && <a href={SOCIAL_FACEBOOK_URL} target="_blank"><img src={iconFacebook} border="0" alt="" width="24" height="24"/></a>}
+                {SOCIAL_TWITTER_URL && <a href={SOCIAL_TWITTER_URL}  target="_blank"><img src={iconTwitter} border="0"  alt="" width="24" height="24"/></a>}
               </div>
             </div>
 
