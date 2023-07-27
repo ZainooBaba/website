@@ -25,15 +25,15 @@ export function WhatWeDo(){
                           <br/><br/>
                           Building upon a 25+ year relationship with SAP, the CodeFluent team is well versed
                           in Enterprise Business Applications and has worked with hundreds of reputable SAP customers.
-                          Through years of SAP Systems Integration experience, the CodeFluent team recognized <br/>
-                          opportunities for technology to further expand the value of SAP.
+                          Through years of SAP Systems integration experience, the CodeFluent team has recognized <br/>
+                          opportunities for technology to further expand the value of SAP solutions.
                       </b1>
                       <b1 style={{width:'37%', minWidth:'28ch', marginLeft:"4.2%"}}>
                           With the advent of SAP’s Business Technology Platform (BTP), CodeFluent is now working
                           within the SAP BTP toolkit to build value-added solutions and integrations for the SAP
                           community.
                           <br/><br/>
-                          As an SAP premier partner, CodeFluent is committed to building software that boosts
+                          As an SAP Gold Partner, CodeFluent is committed to building software that boosts
                           the ROI and flexibility of our customers’ SAP investments.
                       </b1>
                   </div>
