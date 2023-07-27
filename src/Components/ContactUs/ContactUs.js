@@ -130,10 +130,10 @@ export default function ContactUs() {
         <div className="centerIt">
           <div style={{width:'100%', marginTop: '43px'}}><h2>Contact Us</h2></div>
           <div className="flex-container">
-            <div className="contact-us-col1">
+            <div className="contact-us-col1 flex-col-min-50-grow">
               <Contacts />
             </div>
-            <div className="contact-us-col2">
+            <div className="contact-us-col2 flex-col-max-50">
               <Form />
             </div>
           </div>

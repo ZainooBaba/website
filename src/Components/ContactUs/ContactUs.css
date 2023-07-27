@@ -6,13 +6,11 @@
 /*}*/
 
 .contact-us-col1 {
-    flex-grow: 1;
     padding-top: 60px;
 }
 
 .contact-us-col2 {
     width: 497px;
-    max-width: 50%;
 }
 
 .social-media {

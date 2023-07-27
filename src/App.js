@@ -7,6 +7,7 @@ import {WhatWeDo} from "./Components/WhatWeDo/whatWeDo";
 import {Capabilities} from "./Components/Cababilities/Capabilities";
 import {Differentators} from "./Components/Differentators/Differentators";
 import {Careers} from "./Components/Careers/Careers";
+import {AboutUs} from "./Components/AboutUs/AboutUs";
 
 import bgFooter from "./assets/footer.svg";
 import bgCareers from "./assets/careers/bkgrd.svg";
@@ -23,6 +24,9 @@ function App() {
 
         <div style={{height: 120}}/>
         <section id="Differentators"><Differentators/></section>
+
+        <div style={{height: 100}}/>
+        <section id="AboutUs" className="centerIt"><AboutUs/></section>
 
         <div style={{height: 120}}/>
         <section id="Partners"><Partners/></section>

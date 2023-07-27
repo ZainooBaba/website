@@ -45,6 +45,16 @@ body {
   width: 50%;
 }
 
+.flex-col-min-50-grow {
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+.flex-col-max-50 {
+  max-width: 50%;
+}
+
+
 .App {
   text-align: center;
 }
