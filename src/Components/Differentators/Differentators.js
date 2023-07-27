@@ -54,7 +54,7 @@ function TextBox(props) {
         <div style={{zIndex: 8, flex: 1, textAlign: 'left', color: 'white', justifyContent: 'center', display: "flex"}}>
             <div style={{width: "64%"}}>
                 <h6 className={"description"}>{props.title}</h6>
-                <b1 className={"description"}>{props.text}</b1>
+                <b1 className={"subText description"}>{props.text}</b1>
                 <b1 className={"subText description"}>{props.text2}</b1>
             </div>
         </div>
