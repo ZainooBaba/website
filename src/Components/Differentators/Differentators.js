@@ -35,7 +35,7 @@ export function Differentators() {
                              text2={"Enterprise SaaS created include BuyerQuest -- No1 mid-market eProcurement solution*"}/>
                     <Spacer/>
                     <TextBox title={"20 Years"}
-                             text2={"as an SAP Gold Partner with a deep understanding of the SAP ecosystem"}/>
+                             text2={"as an SAP Partner with a deep understanding of the SAP ecosystem"}/>
                     <Spacer/>
                     <TextBox title={"25 years of consulting"}
                              text={"Services with a successful track record advising, implementing, and providing " +
