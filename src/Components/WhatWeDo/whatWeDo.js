@@ -30,7 +30,7 @@ export function WhatWeDo(){
                       </b1>
                       <b1 style={{width:'37%', minWidth:'28ch', marginLeft:"4.2%"}}>
                           With the advent of SAP’s Business Technology Platform (BTP), CodeFluent is now working
-                          within the SAP BTP toolkit to build value-added solutions and integrations for the SAP
+                          within the SAP BTP platform to build value-added solutions and integrations for the SAP
                           community.
                           <br/><br/>
                           As an SAP Gold Partner, CodeFluent is committed to building software that boosts

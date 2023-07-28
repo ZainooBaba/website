@@ -77,20 +77,20 @@ function RightFlowChart() {
                      text={"Experts in designing, developing, and deploying integrations and extensions to " +
                          "solve your unique business requirements and use cases."}
                      text2={
-                         "We solve for functional white spaces and product gaps to personalize your SAP " +
-                         "deployment while keeping the Core clean."
+                         "We solve for functional 'white' spaces and product gaps to personalize your " +
+                         "deployment while keeping the SAP Core clean."
                      }
             />
             <Extra left={'11.2%'} top={'22%'}/>
             <WhiteBox width={'68.7%'} height={'27.2%'} left={'25.2%'} top={'30.5%'} zIndex={2}
                       header={"Expert BTP Consulting"} text={"Connect"}
                       subtext={"Optimize your supply chain, reduce risk, eliminate errors, and foster " +
-                          "collaboration using SAP Integration Suite."}/>
+                          "collaboration using BTP Integration Suite."}/>
             <Extra left={'43%'} top={'50.5%'}/>
             <WhiteBox width={'77.5%'} height={'27%'} left={'-15.5%'} top={'48.6%'} zIndex={1}
                       header={"Expert BTP Consulting"} text={"Extend"}
                       subtext={"Drive efficiency across your organization and reduce internal friction, " +
-                          "improve usability, and adoption using SAP Business Application Studio."}/>
+                          "improve usability, and adoption using BTP Business Application Studio."}/>
             <Extra left={'6.5%'} top={'71%'}/>
             <WhiteBox width={'63.5%'} height={'26.8%'} left={'16%'} top={'74%'} zIndex={1}
                       header={"Expert BTP Consulting"} text={"AI/ML"}
