@@ -1,0 +1,5 @@
+#put it into the build folder after `npm run build`
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^codefluent\.com$
+RewriteRule ^/?$ "https\:\/\/www\.codefluent\.com\/" [R=301,L]
+
