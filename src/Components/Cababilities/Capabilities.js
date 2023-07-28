@@ -77,8 +77,8 @@ function RightFlowChart() {
                      text={"Experts in designing, developing, and deploying integrations and extensions to " +
                          "solve your unique business requirements and use cases."}
                      text2={
-                         "We solve for functional 'white' spaces and product gaps to personalize your SAP " +
-                         "deployment while keeping the Core clean."
+                         "We solve for functional 'white' spaces and product gaps to personalize your " +
+                         "deployment while keeping the SAP Core clean."
                      }
             />
             <Extra left={'11.2%'} top={'22%'}/>
