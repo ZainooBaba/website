@@ -86,7 +86,9 @@ export class Hero extends React.Component {
                         // autoplaySpeed={500}
                         autoplay={true}
                         focusOnSelect={false}
-                        afterChange={current => this.setState({activeSlide: current})}
+                        beforeChange={(current, next) =>
+                            setTimeout(() => {  this.setState({activeSlide: next}); }, 150)
+                           }
                         appendDots={ dots => <ul className={"babab"}>{dots}</ul>}
                         customPaging={ i => (
                     <div className="ft-slick__dots--custom">
