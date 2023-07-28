@@ -17,10 +17,11 @@ export function Careers() {
           <div className="flex-col-50 flex-col flex-col-jv">
             <div className="CareersBox">
               <b1 className={'text'}>
-                Join us to help build the next-generation platform that makes procurement easy for everyone in the mix.
+                  Join us in building the next generation of tools that make spend management easier to use and more
+                  engaging for our customers.
               </b1>
               <div style={{width:'fit-content'}}>
-                <a href={JOB_LINK} className={"SecondaryButton actionButton"} target="_blank">{"See Open Position"}</a>
+                <a href={JOB_LINK} className={"SecondaryButton actionButton"} target="_blank">{"See Open Positions"}</a>
               </div>
             </div>
           </div>
