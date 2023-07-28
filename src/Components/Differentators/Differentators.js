@@ -40,7 +40,7 @@ export function Differentators() {
                     <TextBox title={"25 years of consulting"}
                              text={"Services with a successful track record advising, implementing, and providing " +
                                  "change management services"}
-                             text2={"Successfully implementing SAP solutions for hundreds of (global) organizations"}
+                             text2={"Successfully implementing SAP solutions for hundreds of enterprise organizations"}
                     />
                 </div>
             </div>
