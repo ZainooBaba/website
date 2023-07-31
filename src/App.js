@@ -5,7 +5,7 @@ import {Hero} from "./Components/Hero/Hero";
 import {Partners} from "./Components/Partners/Partners";
 import {WhatWeDo} from "./Components/WhatWeDo/whatWeDo";
 import {Capabilities} from "./Components/Cababilities/Capabilities";
-import {Differentators} from "./Components/Differentators/Differentators";
+import {Differentiators} from "./Components/Differentiators/Differentiators";
 import {Careers} from "./Components/Careers/Careers";
 import {AboutUs} from "./Components/AboutUs/AboutUs";
 
@@ -21,7 +21,7 @@ function App() {
 
         <section id="Capabilities"><Capabilities/></section>
 
-        <section id="Differentators" className="margin-120"><Differentators/></section>
+        <section id="Differentiators" className="margin-120"><Differentiators/></section>
 
         <section id="AboutUs" className="centerIt margin-100"><AboutUs/></section>
 

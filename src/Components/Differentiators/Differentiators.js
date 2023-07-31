@@ -1,10 +1,10 @@
 import React from 'react';
-import './Differentators.css';
+import './Differentiators.css';
 
 import background from '../../assets/diff/bckGrnd.svg';
 import line from '../../assets/diff/whiteLine.svg';
 
-export function Differentators() {
+export function Differentiators() {
     return (
         <div style={{display: "flex"}}>
             <div style={{flex: 1, position: "relative"}} className="centerIt">

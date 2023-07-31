@@ -35,7 +35,7 @@ export function NavBar(props) {
                         {/*<NavItem text="Home" />*/}
                         <NavItem text="What we do" toID={"WhatWeDo"}/>
                         <NavItem text="Capabilities" />
-                        <NavItem text="Differentators" />
+                        <NavItem text="Differentiators" />
                         <NavItem text="About us" toID={"AboutUs"}/>
                         <NavItem text="Partners" />
                         <NavItem text="Careers" />
