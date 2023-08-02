@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import "./ContactUs.css";
 import "../utils.css";
 import * as emailjs from "emailjs-com";
@@ -98,7 +98,6 @@ export function Form(props) {
       {!userSuccessMessage && <div style={{textAlign: 'right'}}>
         <input type="button"
                className={'PrimaryButton pointer'}
-               style={{width: 151}}
                onClick={() => sendMessage(name, email, message)}
                value="Send"
                disabled={processing}
@@ -138,19 +137,19 @@ export default function ContactUs() {
             </div>
           </div>
 
-          <div className="flex-container" style={{marginTop:'20px'}}>
+          <div className="flex-container bottom">
+            <div className="flex-col-50">
+              <div className="copyrights">
+                <s2>All Rights Reserved</s2>
+                <s2>2023</s2>
+              </div>
+            </div>
+
             <div className="flex-col-50">
               <div className="social-media">
                 {SOCIAL_LINKEDIN_URL && <a href={SOCIAL_LINKEDIN_URL} target="_blank"><img src={iconLinkedin} border="0" alt="" width="24" height="24"/></a>}
                 {SOCIAL_FACEBOOK_URL && <a href={SOCIAL_FACEBOOK_URL} target="_blank"><img src={iconFacebook} border="0" alt="" width="24" height="24"/></a>}
                 {SOCIAL_TWITTER_URL && <a href={SOCIAL_TWITTER_URL}  target="_blank"><img src={iconTwitter} border="0"  alt="" width="24" height="24"/></a>}
-              </div>
-            </div>
-
-            <div className="flex-col-50">
-              <div className="copyrights" style={{display: "flex",flexDirection: "row-reverse"}}>
-                <s2 style={{textAlign: 'right'}}>2023</s2>
-                <s2 style={{textAlign: 'right'}}>All Rights Reserved</s2>
               </div>
             </div>
           </div>

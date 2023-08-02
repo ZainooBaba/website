@@ -11,7 +11,6 @@ import {Differentiators} from "./Components/Differentiators/Differentiators";
 import {Careers} from "./Components/Careers/Careers";
 import {AboutUs} from "./Components/AboutUs/AboutUs";
 
-import bgFooter from "./assets/footer.svg";
 import bgCareers from "./assets/careers/bkgrd.svg";
 
 function App() {
@@ -33,7 +32,7 @@ function App() {
           <Careers />
         </section>
 
-        <section id="footer" style={{backgroundImage: `url(${bgFooter})`}} className="bgAble">
+        <section id="footer" className="bgAble">
           <ContactUs/>
         </section>
     </div>

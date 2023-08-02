@@ -108,3 +108,34 @@ h1, h2, h3, h4, h5, h6, s1, s2, b1, b2, cap, ovr {
 }
 
 
+h4, s2 {
+    color: var(--text-white);
+}
+
+h2, h6, b1 {
+    color: var(--text-white);
+    margin: 0px;
+    /*margin: 8px;*/
+}
+
+
+/** Mobile: All Mobiles */
+/** @todo: customize the rest of header styles */
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+/** Laptop: regular screens + large screen resolutions */
+@media screen and (min-width: 1025px) {
+    h4, s2 {
+        margin: 8px;
+    }
+}

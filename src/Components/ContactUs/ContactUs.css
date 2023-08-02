@@ -14,38 +14,35 @@
     background-size: auto;
 }
 
-.contact-us-col:nth-child(1) {
-    padding-top: 60px;
-    flex-grow: 1;
-    min-width: 50%;
+#footer .PrimaryButton {
+    width: 151px;
 }
 
-.contact-us-col:nth-child(2) {
-    width: 497px;
-    max-width: 50%;
+#footer .bottom {
+    margin-top: 20px;
 }
 
-.social-media {
+#footer .social-media {
     width: 100%;
     display: flex;
+    flex-direction: row;
 }
 
-.social-media a { display: block; width: 24px; height: 24px; margin-right: 40px;}
-
-h4, s2{
-    color: var(--text-white);
-    margin: 8px;
+#footer .social-media a {
+    width: 24px;
+    height: 24px;
+    margin-right: 40px;
 }
 
-s2{
-    margin-left: 32px;
+#footer .social-media a:last-child {
+    margin-right: 0;
 }
 
-h2,h6, b1{
-    color: var(--text-white);
-    margin: 0px;
-    /*margin: 8px;*/
+#footer .copyrights,
+#footer .copyrights s2 {
+    display: inline;
 }
+
 
 .FormMessage {
     padding-top: 5px;
@@ -63,19 +60,102 @@ h2,h6, b1{
     color: #CB4141;
 }
 
+
 /** Mobile: All Mobiles */
 @media screen and (max-width: 480px) {
+    /** @todo: ... */
+    #footer {
+        background: url('../../assets/footer/footer-size-s.svg');
+    }
+
+    #footer .flex-container {
+        display: block !important;
+        flex: none !important;
+    }
+
+    .contact-us-col:nth-child(1) {
+        padding-top: 32px;
+        flex-grow: 1;
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .contact-us-col:nth-child(2) {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    #footer .wrapper {
+        padding: 0;
+    }
+
+    #footer .PrimaryButton {
+        width: 100%;
+    }
+
+    #footer .flex-col-50 {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    #footer .social-media {
+        display: block;
+    }
+
+    #footer .social-media a {
+        display: inline;
+    }
+
+    #footer .copyrights s2 {
+        margin: 0 8px;
+    }
+}
+
+/** Mobile: All Mobiles below iphone 14 */
+@media screen and (min-width: 320px) and (max-width: 389px) {
     /** @todo: ... */
 }
 
 /** Mobile: Iphone 14 ... @todo: i am not sure if it is right way .... */
-@media screen and (min-width: 390px) and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 390px) {
     /** @todo: ... */
 }
+
 
 /** Tablet: All Other Pads and small screens */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
     /** @todo: ... */
+}
+
+
+/** Laptop: regular screens + large screen resolutions */
+@media screen and (min-width: 1025px) {
+    #footer {
+        min-height: 519px;
+        margin-top: 50px; /* @todo */
+
+        background: url('../../assets/footer/footer-size-x.svg');
+    }
+
+    #footer .bottom {
+        display: block;
+    }
+
+    #footer .bottom .flex-col-50:nth-child(1) {
+        float: right;
+        text-align: right;
+    }
+
+    .contact-us-col:nth-child(1) {
+        padding-top: 60px;
+        flex-grow: 1;
+        min-width: 50%;
+    }
+
+    .contact-us-col:nth-child(2) {
+        width: 497px;
+        max-width: 50%;
+    }
 }
 
 /** Laptop: regular screens */
@@ -88,9 +168,5 @@ h2,h6, b1{
 
 /** Laptop: large screen resolutions */
 @media screen and (min-width: 1201px) {
-    #footer {
-        min-height: 519px;
-        margin-top: 50px; /* @todo */
-    }
-}
 
+}
