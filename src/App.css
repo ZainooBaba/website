@@ -1,6 +1,19 @@
 @import "standards.css";
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800&display=swap');
 
+/**
+@See: https://www.toptal.com/responsive-web/introduction-to-responsive-web-design-pseudo-elements-media-queries
+Unfortunately, there’s no defined standard for the page widths to target, but the following example responsive values are often used:
+
+320px
+480px
+600px
+768px
+900px
+1024px
+1200px
+*/
+
 body, html {
   font-family: "Hanken Grotesk", Helvetica, sans-serif;
 }
