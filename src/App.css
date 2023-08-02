@@ -5,18 +5,53 @@ body, html {
   font-family: "Hanken Grotesk", Helvetica, sans-serif;
 }
 
-body {
-  /*@todo: fix it*/
-  min-width: 1439px;
+/** Common vars - to rewrite by a certain screen-resolution */
+:root {
+  --center-margin-size-x: 0px;
+}
 
-  max-width: 1439px;
+/** Mobile: All Mobiles */
+@media screen and (max-width: 480px){
+  :root {
+    --center-margin-size-x: 8px;
+  }
+}
+
+/** Tablet: All Other Pads and small screens */
+@media screen and (min-width: 481px) and (max-width: 1024px){
+  :root {
+    --center-margin-size-x: 8px;
+  }
+}
+
+/** Laptop: regular screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  :root {
+    --center-margin-size-x: 38px;
+  }
+}
+
+/** Laptop: large screen resolutions */
+@media screen and (min-width: 1201px) {
+  :root {
+    --center-margin-size-x: 138px;
+  }
+}
+
+
+/*#Mobile (up to 480px)*/
+/*#Ipad / Small Screens (from 481px to 1024px)*/
+/*#Desktop / Large Screens (from 1024px)*/
+
+/** Common Styles - to rewrite by a certain screen-resolution */
+body {
   margin-left: auto;
   margin-right: auto;
 }
 
 .centerIt {
-  margin-left: var(--center-margin);
-  margin-right: var(--center-margin);
+  margin-left: var(--center-margin-size-x);
+  margin-right: var(--center-margin-size-x);
   /*width: 81%;*/
 }
 
@@ -60,16 +95,6 @@ body {
   }
 }
 
-#footer {
-  /*min-height: 100vh;*/
-  min-height: 519px;
-  margin-top: 50px; /* @todo */
-
-  width: 100%;
-  bottom: 0;
-  display: block;
-}
-
 .bgAble {
   /** background */
   background-repeat: no-repeat;
@@ -108,4 +133,46 @@ body {
 
 .pointer {
   cursor: pointer;
+}
+
+
+/** Mobile: All Mobiles */
+@media screen and (max-width: 390px) {
+  body {
+    min-width: 320px;
+    max-width: 480px;
+  }
+}
+
+/** Mobile: Iphone 14 ... @todo: i am not sure if it is right way .... */
+@media screen and (max-width: 480px) and (min-width: 390px) {
+  body {
+    min-width: 390px;
+    max-width: 480px;
+  }
+}
+
+/** Tablet: All Other Pads and small screens */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  /** @todo: ... */
+  body {
+    max-width: 1024px;
+  }
+}
+
+/** Laptop: regular screens */
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  /** @todo: ... */
+  body {
+    min-width: 1025px;
+    max-width: 1025px;
+  }
+}
+
+/** Laptop: large screen resolutions */
+@media screen and (min-width: 1201px) {
+  body {
+    min-width: 1201px;
+    max-width: 1439px;
+  }
 }

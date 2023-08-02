@@ -1,6 +1,6 @@
 .about-us-col1 {
     height: 416px;
-    width: calc(647px - var(--center-margin));
+    width: calc(647px - var(--center-margin-size-x));
 }
 
 .about-us-col1 img {

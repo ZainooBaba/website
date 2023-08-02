@@ -1,4 +1,6 @@
 import './App.css';
+// import './Components/Common/Common.css';
+
 import ContactUs from './Components/ContactUs/ContactUs';
 import {NavBar} from "./Components/NavBar/NavBar";
 import {Hero} from "./Components/Hero/Hero";
