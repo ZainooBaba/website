@@ -12,6 +12,8 @@ import Nitor from "../../assets/partners/Nitor.svg";
 import Google from "../../assets/partners/Google.svg";
 
 import backdrop from "../../assets/partner_backdrop.svg";
+import { useState, useMediaQuery } from "react";
+
 
 
 const PARTNERS = [
@@ -30,39 +32,28 @@ function Partner(props) {
     )
 }
 
-export class Partners extends React.Component {
-    // function SamplePrevArrow(props) {
-    //     const {className, style, onClick} = props;
-    //     return (
-    //         <div>
-    //             <img src={leftArrow} alt={"arrow"} className={"arrow arrow-btn next"}
-    //                  onClick={() => this.slider.slickNext()}
-    //                      />
-    //         </div>
-    //     );
-    // }
+export function Partners() {
 
-    renderArrows = () => {
-        return (
-            <div className="slider-arrow">
-                <button
-                    className="arrow-btn prev"
-                    onClick={() => this.slider.slickPrev()}
-                >
-                    hello
-                </button>
-                <button
-                    className="arrow-btn next"
-                    onClick={() => this.slider.slickNext()}
-                >
-                    byeeeee
-                </button>
-            </div>
-        );
-    };
+        const breakpoints = [570, 900, 1201];
+        const [amountOfSlides, setSlideAmount] =  useState(getSlideAmount());
+
+    function getSlideAmount() {
+        var width = window.innerWidth;
+        if(width < breakpoints[0]) return 1;
+        if(width < breakpoints[1]) return 2;
+        if(width < breakpoints[2]) return 3;
+        return 4;
+    }
+
+    React.useEffect(() => {
+            /* Inside of a "useEffect" hook add an event listener that updates
+               the "width" state variable when the window size changes */
+            window.addEventListener("resize", () => setSlideAmount(getSlideAmount()));
+
+        }, []);
 
 
-    render() {
+
         return (
             <div className={"partnerContainer"}>
                 <img src={backdrop} className={"backdrop"} alt={"bababui"}/>
@@ -72,11 +63,11 @@ export class Partners extends React.Component {
                         {/*{this.renderArrows()}*/}
                         <Slider dots={false}
                                 infinite={true}
-                                slidesPerRow={4}
+                                slidesPerRow={amountOfSlides}
                                 // arrows={false}
                                 className={"slider"}
                                 useTransform={false}
-                                ref={c => (this.slider = c)}
+                                // ref={c => (this.slider = c)}
                         >
                             <div className={"sliderCard"}><Partner index={0}/></div>
                             <div className={"sliderCard"}><Partner index={1}/></div>
@@ -88,6 +79,5 @@ export class Partners extends React.Component {
                 </div>
             </div>
         );
-    }
 }
 
