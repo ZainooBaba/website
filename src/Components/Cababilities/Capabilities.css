@@ -11,6 +11,11 @@
     /*padding: 5%;*/
 }
 
+.mobileBox{
+    position: relative !important;
+    margin-bottom: 50px;
+}
+
 .whiteBox{
     background: var(--text-white);
     border-radius: 30px;

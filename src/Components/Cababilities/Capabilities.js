@@ -34,7 +34,7 @@ export function Capabilities() {
         <div style={{height:'300', width:'100%'}}>
             <div className="CapHolder">
                 {isMobile? <MobileChartLeft/> : <LeftFlowChart/>}
-                {/*{isMobile? <MobileChartRight/> : <RightFlowChart/>}*/}
+                {isMobile? <MobileChartRight/> : <RightFlowChart/>}
             </div>
             {/*<Footer/>*/}
         </div>
@@ -126,15 +126,15 @@ function RightFlowChart() {
 function MobileChartLeft() {
     return(
         <div style={{height: 'fit-content', width: '100%', position: 'relative'}}>
-            <BlueBox header={"SaaS Solutions"} position={'relative'}
+            <BlueBox header={"SaaS Solutions"} classes={'mobileBox'}
                      text={"Accelerator applications built to integrate and extend SAP's Source-to-Pay " +
                          "and Supply Chain solutions for industry specific verticals. Built on SAP BTP."}
             />
-            <WhiteBox position={'relative'}
+            <WhiteBox classes={'mobileBox'}
                       header={"SaaS Solutions"} text={"SAP Ariba, Fieldglass and Concur"}/>
-            <WhiteBox position={'relative'}
+            <WhiteBox classes={'mobileBox'}
                       header={"SaaS Solutions"} text={"SAP Intelligent Spend & Business Network"}/>
-            <WhiteBox position={'relative'}
+            <WhiteBox classes={'mobileBox'}
                       header={"SaaS Solutions"}
                       text={"SAP Supply Chain Collaboration and Planning"}/>
         </div>
@@ -143,17 +143,33 @@ function MobileChartLeft() {
 
 function MobileChartRight() {
     return(
-        <BlueBox width={"99.85%"} height={"31.35%"} header={"SaaS Solutions"}
-                 text={"Accelerator applications built to integrate and extend SAP's Source-to-Pay " +
-                     "and Supply Chain solutions for industry specific verticals. Built on SAP BTP."}
-        />
+        <div style={{height: 'fit-content', width: '100%', position: 'relative'}}>
+            <BlueBox classes={'mobileBox'} header={"BTP Consulting Services"}
+                     text={"Experts in designing, developing, and deploying integrations and extensions to " +
+                         "solve your unique business requirements and use cases."}
+                     text2={
+                         "We solve for functional 'white' spaces and product gaps to personalize your " +
+                         "deployment while keeping the SAP Core clean."
+                     }
+            />
+            <WhiteBox classes={'mobileBox'} header={"Expert BTP Consulting"} text={"Connect"}
+                      subtext={"Optimize your supply chain, reduce risk, eliminate errors, and foster " +
+                          "collaboration using BTP Integration Suite."}/>
+            <WhiteBox classes={'mobileBox'} header={"Expert BTP Consulting"} text={"Extend"}
+                      subtext={"Drive efficiency across your organization and reduce internal friction, " +
+                          "improve usability, and adoption using BTP Business Application Studio."}/>
+            <WhiteBox classes={'mobileBox'} header={"Expert BTP Consulting"} text={"AI/ML"}
+                      subtext={"Enable intelligent decisionmaking and discover patterns to extract " +
+                          "insights using RPA."}/>
+
+
+        </div>
     )
 }
 
 function BlueBox(props) {
     return (
-        <div className={'blueBox'} style={{width: props.width, height: props.height,
-            position: props.position ? props.position : 'absolute'}}>
+        <div className={'blueBox ' + props.classes} style={{width: props.width, height: props.height}}>
             <img src={corner} style={{position: "absolute", right: '-17px', top: "-21px"}}/>
             <div style={{padding: 25}}>
                 <h5 style={{margin: 0, marginBottom: 0, color: 'white'}}>{props.header}</h5>
@@ -166,10 +182,9 @@ function BlueBox(props) {
 
 function WhiteBox(props) {
     return (
-        <div className={'whiteBox'} style={{
+        <div className={'whiteBox ' + props.classes} style={{
             width: props.width, height: props.height,
-            left: props.left, top: props.top, zIndex: props.zIndex,
-            position: props.position ? props.position : 'absolute'
+            left: props.left, top: props.top, zIndex: props.zIndex
         }}>
             <div style={{padding: 25, height: '100%'}}>
                 <cap>{props.header}</cap>
