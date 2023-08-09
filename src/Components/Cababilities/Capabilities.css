@@ -32,3 +32,10 @@
     margin-bottom: 75px;
     color: var(--text);
 }
+
+#Capabilities .CapHolder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content;
+}

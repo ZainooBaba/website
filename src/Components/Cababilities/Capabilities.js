@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Capabilities.css';
 
 import corner from "../../assets/corner2.svg";
@@ -17,29 +17,48 @@ import icon1 from "../../assets/capabilities/icons/icon_4.svg";
 import bckgrd from "../../assets/capabilities/arrows/bckgrd.svg";
 import moon from "../../assets/capabilities/arrows/moon.svg";
 
+const breakpoints = 700;
+
+
 
 export function Capabilities() {
+    const [isMobile, setMobile] =  useState((window.innerWidth < breakpoints));
+
+    React.useEffect(() => {
+        /* Inside of a "useEffect" hook add an event listener that updates
+           the "width" state variable when the window size changes */
+        window.addEventListener("resize", () => setMobile(window.innerWidth < breakpoints));
+
+    }, []);
     return (
-        <div style={{height:'fit-content'}}>
-            <h2 className={"headerText"}>Capabilities</h2>
-            <div style={{display: "flex", height: 'fit-content'}}>
-
-              <div style={{flex: 1, height: 'fit-content', position:"relative"}} className="centerIt">
-                    <div style={{display: 'flex'}}>
-                        <LeftFlowChart/>
-                        <div style={{height: 500, width: 52, position: 'relative'}}/>
-                        <RightFlowChart/>
-                    </div>
-                    <Footer/>
-                    <div>
-                        <img src={moon} alt={"hero"} style={{top:"22%", left: "13%", position: "absolute", width:'auto', zIndex:-1}}/>
-                    </div>
-                </div>
-
+        <div style={{height:'300', width:'100%'}}>
+            <div className="CapHolder">
+                {isMobile? <MobileChartLeft/> : <LeftFlowChart/>}
+                {/*{isMobile? <MobileChartRight/> : <RightFlowChart/>}*/}
             </div>
+            {/*<Footer/>*/}
         </div>
     )
 }
+
+
+// <div style={{height:'fit-content'}}>
+//     <h2 className={"headerText"}>Capabilities</h2>
+//     <div style={{display: "flex", height: 'fit-content'}}>
+//         <div style={{flex: 1, height: 'fit-content', position:"relative"}}>
+//             <div style={{display: 'flex', justifyContent:'center'}}>
+//                 <LeftFlowChart/>
+//                 <div style={{height: 500, flex:1, position: 'relative'}}/>
+//                 <RightFlowChart/>
+//             </div>
+//             <Footer/>
+//             <div>
+//                 <img src={moon} alt={"hero"} style={{top:"22%", left: "13%", position: "absolute", width:'auto', zIndex:-1}}/>
+//             </div>
+//         </div>
+//
+//     </div>
+// </div>
 
 function LeftFlowChart() {
     return (
@@ -104,9 +123,37 @@ function RightFlowChart() {
     )
 }
 
+function MobileChartLeft() {
+    return(
+        <div style={{height: 'fit-content', width: '100%', position: 'relative'}}>
+            <BlueBox header={"SaaS Solutions"} position={'relative'}
+                     text={"Accelerator applications built to integrate and extend SAP's Source-to-Pay " +
+                         "and Supply Chain solutions for industry specific verticals. Built on SAP BTP."}
+            />
+            <WhiteBox position={'relative'}
+                      header={"SaaS Solutions"} text={"SAP Ariba, Fieldglass and Concur"}/>
+            <WhiteBox position={'relative'}
+                      header={"SaaS Solutions"} text={"SAP Intelligent Spend & Business Network"}/>
+            <WhiteBox position={'relative'}
+                      header={"SaaS Solutions"}
+                      text={"SAP Supply Chain Collaboration and Planning"}/>
+        </div>
+    )
+}
+
+function MobileChartRight() {
+    return(
+        <BlueBox width={"99.85%"} height={"31.35%"} header={"SaaS Solutions"}
+                 text={"Accelerator applications built to integrate and extend SAP's Source-to-Pay " +
+                     "and Supply Chain solutions for industry specific verticals. Built on SAP BTP."}
+        />
+    )
+}
+
 function BlueBox(props) {
     return (
-        <div className={'blueBox'} style={{width: props.width, height: props.height}}>
+        <div className={'blueBox'} style={{width: props.width, height: props.height,
+            position: props.position ? props.position : 'absolute'}}>
             <img src={corner} style={{position: "absolute", right: '-17px', top: "-21px"}}/>
             <div style={{padding: 25}}>
                 <h5 style={{margin: 0, marginBottom: 0, color: 'white'}}>{props.header}</h5>
@@ -121,7 +168,8 @@ function WhiteBox(props) {
     return (
         <div className={'whiteBox'} style={{
             width: props.width, height: props.height,
-            left: props.left, top: props.top, zIndex: props.zIndex
+            left: props.left, top: props.top, zIndex: props.zIndex,
+            position: props.position ? props.position : 'absolute'
         }}>
             <div style={{padding: 25, height: '100%'}}>
                 <cap>{props.header}</cap>

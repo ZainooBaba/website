@@ -121,15 +121,35 @@ h2, h6, b1 {
 
 /** Mobile: All Mobiles */
 /** @todo: customize the rest of header styles */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px !important;
+        line-height: 50px !important;
+    }
+
     h2 {
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 32px !important;
+        line-height: 42px !important;
+    }
+
+    h3 {
+        font-size: 24px !important;
+        line-height: 36px !important;
     }
 
     h4 {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+
+    h5 {
+        font-size: 18px !important;
+        line-height: 27px !important;
+    }
+
+    h6 {
+        font-size: 17px;
+        line-height: 26px;
     }
 }
 
@@ -139,3 +159,5 @@ h2, h6, b1 {
         margin: 8px;
     }
 }
+
+

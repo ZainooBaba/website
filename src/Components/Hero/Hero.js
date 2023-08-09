@@ -14,13 +14,14 @@ import { Link } from "react-scroll";
 const headerText = [
     "Maximize your SAP solution",
     "Articulate SaaS solutions",
-    "Orchestrate Integrate Discover"
+    "Orchestrate & Integrate"
 ]
 
 const subText = [
     "Accelerate your Digital Transformation",
     "Supply chain and Procurement expertise meets enterprise development",
-    "...your supply chain"
+    "This might improve your supply chain\n" +
+    "for sure"
 ]
 
 function LetsDiscuss() {
@@ -51,20 +52,15 @@ export class Hero extends React.Component {
 
         const HeroText3 =
             <div className={'container'}>
-                <div style={{display: 'flex', alignContent: 'flex-end'}}>
-                    <div style={{width: '52.5%'}}>
-                        <h1 className={'headtext3'}>{headerText[2]}</h1>
-                        <div className={"spacer"}/>
-                    </div>
-                    <div className={'subtext3'}>
-                        <h4 className={'subtext32'}>{subText[2]}</h4>
-                    </div>
-                </div>
+                <h1 className={'headtext'}>{headerText[2]}</h1>
+                <h4 className={'subtext2'}>{subText[2]}</h4>
                 {/*{count}*/}
                 <LetsDiscuss />
             </div>
 
+
         const HeroText = () => {
+
             switch (this.state.activeSlide) {
                 case 0:
                     return HeroText1;
@@ -74,6 +70,7 @@ export class Hero extends React.Component {
                     return HeroText3;
             }
         };
+
 
 
         const HeroImage =
@@ -109,12 +106,12 @@ export class Hero extends React.Component {
             </div>
 
         return (
-            <div className="hero flex-container">
-              <div className="flex-col-50">
-                <HeroText/>
+            <div className="hero flex-container" style={{flexDirection:'row-reverse', alignItems: 'flex-start'}}>
+              <div className="halver" style={{height:'350px'}}>
+                  {HeroImage}
               </div>
-              <div className="flex-col-50">
-                {HeroImage}
+              <div className="halver">
+                  <HeroText/>
               </div>
             </div>
         )

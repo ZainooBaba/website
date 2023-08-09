@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: left;
     height: fit-content;
-    width: 577px;
+    width: 530px;
+    max-width: 100%;
 }
 
 .headtext {
@@ -17,14 +18,14 @@
     color: var(--secondary-main);
     margin: 0;
     margin-top: 26px;
-    width: 60%;
+    width: 80%;
 }
 
 .subtext2 {
     color: var(--secondary-main);
     margin: 0;
     margin-top: 26px;
-    width: 80%;
+    width: 90%;
 }
 
 .subtext3 {
@@ -103,7 +104,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 92px;
+    /*padding-top: 92px;*/
+    flex-wrap: wrap;
 }
 
 .Cont {
@@ -172,14 +174,25 @@ li.slick-active > button::before {
 }
 
 .heroImageContainer {
-    margin-left: auto;
+    margin-left: max( 500px, auto);
     margin-right: 0;
+    position: absolute;
+    right: 0;
 }
 
 .heroImageContainer, .heroImage {
     width: 530px;
+    max-width: 100%;
 }
 
 .heroImageContainer .slick-arrow {
     display: none;
+}
+
+.halver{
+    min-width: 375px;
+    /*height: 300px;*/
+    position: relative;
+    flex: 1;
+    align-self: flex-start;
 }

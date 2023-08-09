@@ -87,13 +87,11 @@ export function NavBar(props) {
     }
 
     return (
-        <>
             <nav className="navbar">
-                <div className="nav-container" style={{display: 'flex', height: 50}}>
+                <div className="nav-container" style={{display: 'flex', height: 50, position:"relative"}}>
                     <img src={logo} alt="Logo" style={{height: 52, position: 'absolute', left: -10}}/>
                     <Menu/>
                 </div>
             </nav>
-        </>
     )
 }

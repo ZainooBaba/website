@@ -27,4 +27,54 @@
     display: block;
 }
 
+#Careers buttonContainer{
+    width: fit-content;
+}
+
+#Careers .SecondaryButton {
+    margin: 24px 0 0 0;
+}
+
+@media screen and (max-width: 690px) {
+    #Careers .CareersCont{
+        width: 100% !important;
+    }
+    #Careers .CarrerImage{
+        height: 115% !important;
+    }
+
+    #Careers .CareersBox{
+        width: 85% !important;
+        margin: auto !important;
+        align-self: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    #Careers .text{
+        width: 100% !important;
+        align-self: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+
+    #Careers .SecondaryButton{
+        width: 85% !important;
+        max-width: none !important;
+    }
+
+    #Careers .CareersImg {
+        right: 5% !important;
+        top: 16% !important;
+        position: relative;
+    }
+
+    #Careers {
+        margin-bottom: 150px;
+    }
+
+}
+
+
 /*textAlign:'center', position:"absolute", top: '25px', left:0*/

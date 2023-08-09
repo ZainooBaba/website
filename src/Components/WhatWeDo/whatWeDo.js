@@ -18,8 +18,8 @@ export function WhatWeDo(){
 
               <div style={{paddingLeft:'2.8%', paddingTop:'2.25%', zIndex:'3'}}>
                   <h2>What we do</h2>
-                  <div style={{display: "flex",flexWrap: "wrap", flexDirection: "row", marginTop:12}}>
-                      <b1 style={{width:'37%', minWidth:'28ch'}}>
+                  <div style={{display: "flex", flexWrap: "wrap", flexDirection: "row", marginTop:12, paddingRight:'2.8%', paddingBottom:'2.8%'}}>
+                      <b1 style={{width:418, maxWidth:'50%'}}>
                           CodeFluent’s mission is simple: tailored business applications, integrations, and
                           extensions that are built to extend the value and functionality of the SAP Platform.
                           <br/><br/>
@@ -28,7 +28,7 @@ export function WhatWeDo(){
                           Through years of SAP Systems integration experience, the CodeFluent team has recognized <br/>
                           opportunities for technology to further expand the value of SAP solutions.
                       </b1>
-                      <b1 style={{width:'37%', minWidth:'28ch', marginLeft:"4.2%"}}>
+                      <b1 style={{width:'33%', maxWidth:'50%', marginLeft:"4.2%"}}>
                           With the advent of SAP’s Business Technology Platform (BTP), CodeFluent is now working
                           within the SAP BTP platform to build value-added solutions and integrations for the SAP
                           community.
