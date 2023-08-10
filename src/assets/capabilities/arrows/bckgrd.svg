@@ -1,4 +1,4 @@
-<svg preserveAspectRatio="xMidYMax slice" width="1165" height="321" viewBox="0 0 1165 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg preserveAspectRatio="none" width="1165" height="321" viewBox="0 0 1165 321" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="path-1-inside-1_370_590" fill="white">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M215 20C215 8.95431 223.954 0 235 0H466C477.046 0 486 8.95431 486 20C486 31.0457 494.954 40 506 40H1135C1151.57 40 1165 53.4315 1165 70V269.368V291C1165 307.568 1151.57 321 1135 321H30C13.4315 321 0 307.569 0 291V70C0 53.4315 13.4315 40 30 40H195C206.046 40 215 31.0457 215 20Z"/>
 </mask>

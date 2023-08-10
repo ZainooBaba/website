@@ -15,6 +15,7 @@ import icon2 from "../../assets/capabilities/icons/icon_3.svg";
 import icon1 from "../../assets/capabilities/icons/icon_4.svg";
 
 import bckgrd from "../../assets/capabilities/arrows/bckgrd.svg";
+import bkgPMob from "../../assets/capabilities/arrows/bkgPMob.svg";
 import moon from "../../assets/capabilities/arrows/moon.svg";
 
 const breakpoints = 700;
@@ -32,11 +33,12 @@ export function Capabilities() {
     }, []);
     return (
         <div style={{height:'300', width:'100%'}}>
+            <h2 className={"headerText"}>Capabilities</h2>
             <div className="CapHolder">
                 {isMobile? <MobileChartLeft/> : <LeftFlowChart/>}
                 {isMobile? <MobileChartRight/> : <RightFlowChart/>}
             </div>
-            {/*<Footer/>*/}
+            {isMobile? <MobileFooter/> : <Footer2/>}
         </div>
     )
 }
@@ -144,6 +146,7 @@ function MobileChartLeft() {
 function MobileChartRight() {
     return(
         <div style={{height: 'fit-content', width: '100%', position: 'relative'}}>
+            <div style={{height:60}}/>
             <BlueBox classes={'mobileBox'} header={"BTP Consulting Services"}
                      text={"Experts in designing, developing, and deploying integrations and extensions to " +
                          "solve your unique business requirements and use cases."}
@@ -233,9 +236,58 @@ function Footer() {
         </div>
     )
 }
+
+function Footer2() {
+    return (
+        <div style={{height: "fit-content", width: '100%', position:"relative", marginTop:25, paddingTop:40}}>
+            <div style={{top:10,width: '23%',position: "absolute", left:"20.5%"}}>
+                <h4 className={"text"}>
+                    Design Principles
+                </h4>
+            </div>
+            <div style={{display: 'flex', justifyContent:'space-around', width: '100%', alignItems:'flex-end', flexWrap:'wrap'}}>
+                <IconBox2 src={icon1} text={"Built on SAP BTP Platform"} />
+                <IconBox2 src={icon2} text={"Industry-Specific Accelerators"} />
+                <IconBox2 src={icon3} text={"Mobile-First Approach"} />
+                <IconBox2 src={icon4} text={"Cloud & Edge Solutions"} />
+            </div>
+            <img src={bckgrd} alt={"hero"} style={{  minHeight: 312, left:0, top:0,width:'100%',height:'100%',position:'absolute', zIndex:-1}}/>
+        </div>
+    )
+}
+
+function MobileFooter() {
+    return (
+        <div style={{height: "fit-content", width: '100%', position:"relative", marginTop:25, paddingTop:24}}>
+            <div style={{top:10,width: '50%',position: "absolute", left:"20%"}}>
+                <h4 className={"text"}>
+                    Design Principles
+                </h4>
+            </div>
+                <div style={{display: 'flex', justifyContent:'space-around', width: '100%', alignItems:'flex-end', flexWrap:'wrap'}}>
+                    <IconBox2 src={icon1} text={"Built on SAP BTP Platform"} />
+                    <IconBox2 src={icon2} text={"Industry-Specific Accelerators"} />
+                    <IconBox2 src={icon3} text={"Mobile-First Approach"} />
+                    <IconBox2 src={icon4} text={"Cloud & Edge Solutions"} />
+                </div>
+            <img src={bkgPMob} alt={"hero"} style={{  minHeight: 312, left:0, top:0,width:'100%',height:'105%',position:'absolute', zIndex:-1}}/>
+        </div>
+    )
+}
 function IconBox(props) {
     return(
         <div style={{justifyContent:'center', width:'80%',height: 'fit-content',display:'flex',flexDirection:'column'}}>
+            <div>
+                <img src={props.src} alt={"hero"}/>
+            </div>
+            <s1 style={{textAlign:'center',marginTop:props.marg}}>{props.text}</s1>
+        </div>
+    )
+}
+
+function IconBox2(props) {
+    return(
+        <div style={{ alignContent: 'center', display:'flex',justifyContent:'flex-end', width: 230,height: 200,flexDirection:'column'}}>
             <div>
                 <img src={props.src} alt={"hero"}/>
             </div>

@@ -178,6 +178,7 @@ li.slick-active > button::before {
     margin-right: 0;
     position: absolute;
     right: 0;
+    max-width: 100%;
 }
 
 .heroImageContainer, .heroImage {
@@ -196,3 +197,14 @@ li.slick-active > button::before {
     flex: 1;
     align-self: flex-start;
 }
+
+/*@media (min-width: 650px) {*/
+/*    .halver{*/
+/*        width: 100% !important;*/
+/*        !*min-width: 375px;*!*/
+/*    }*/
+
+/*    .container{*/
+/*        width: 100% !important;*/
+/*    }*/
+/*}*/

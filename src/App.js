@@ -19,11 +19,12 @@ function App() {
       <section id="NavBar" className="centerIt"><NavBar/></section>
         <section id="Hero" className="centerIt"><Hero/></section>
       <div style={{height: 200}}/>
-        {/*<section id="WhatWeDo" className="margin-100"><WhatWeDo/></section>*/}
+        <section id="WhatWeDo" className="margin-125"><WhatWeDo/></section>
+      <div style={{height: 300}}/>
 
         <section id="Capabilities" className="centerIt margin-100"><Capabilities/></section>
 
-        {/*<section id="Differentiators" className="margin-120"><Differentiators/></section>*/}
+        <section id="Differentiators" className="centerIt margin-120"><Differentiators/></section>
 
         {/*<section id="AboutUs" className="centerIt margin-100"><AboutUs/></section>*/}
 
