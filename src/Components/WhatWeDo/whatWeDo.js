@@ -6,6 +6,8 @@ import circle from "../../assets/graphic.svg";
 import crescent from "../../assets/graphic2.svg";
 import React, {useState} from "react";
 import mobileBackground from "../../assets/whatWeDo/bkg2.svg";
+import topLeft from "../../assets/whatWeDo/topLeft.png";
+import bottomRight from "../../assets/whatWeDo/botRight.png";
 
 //TODO fix spacining
 // -fix streaching
@@ -36,22 +38,41 @@ export function WhatWeDo(){
         );
     }
 
-    return (
-      <div style={{flex:1, height:"fit-content"}} className="centerIt">
-          <div style={{display: "flex", position:"relative", height:"fit-content"}}>
-              {isMobile ?
-                  <img src={mobileBackground} style={{width:"100%", position:"absolute", height: 850}}/>
-              : <img src={background} style={{width:"100%", position:"absolute", minHeight:'120%'}}/>}
-              <Graphics isMobile={isMobile}/>
+    // return (
+    //   <div style={{flex:1, height:"fit-content"}} className="centerIt">
+    //       <div style={{display: "flex", position:"relative", height:"fit-content"}}>
+    //           {isMobile ?
+    //               <img src={mobileBackground} style={{width:"100%", position:"absolute", height: 850}}/>
+    //           : <img src={background} style={{width:"100%", position:"absolute", minHeight:'120%'}}/>}
+    //           <Graphics isMobile={isMobile}/>
+    //
+    //           <div style={{paddingLeft:'2.8%', paddingTop:'2.25%', zIndex:'3'}}>
+    //               <h2>What we do</h2>
+    //               <div style={{display: "flex", flexWrap: "wrap", flexDirection: "row", marginTop:12, paddingRight:'2.8%', paddingBottom:'2.8%'}}>
+    //                   <TextChunk isMobile={isMobile}/>
+    //               </div>
+    //           </div>
+    //       </div>
+    //   </div>
+    // )
 
-              <div style={{paddingLeft:'2.8%', paddingTop:'2.25%', zIndex:'3'}}>
-                  <h2>What we do</h2>
-                  <div style={{display: "flex", flexWrap: "wrap", flexDirection: "row", marginTop:12, paddingRight:'2.8%', paddingBottom:'2.8%'}}>
-                      <TextChunk isMobile={isMobile}/>
-                  </div>
-              </div>
-          </div>
-      </div>
+    return (
+        <div className="centerIt" style={{display:'block', flexDirection:'column', position:'relative'}}>
+            <div style={ {top: '-50%', display:"flex"}}>
+                <div style ={{height: 100, width: 500, background:'#115074', borderRadius:'20px 20px 0 0'}}/>
+                <div style ={{height: 100, position:'relative', width: 10, background:'#999999', borderRadius:'0 0 0 20px'}}>
+                    <div style={{position:"absolute", left:0, bottom:0, width:10, height:10, }}/>
+            </div>
+            {/*<img style={{width:390}} src={topLeft}/>*/}
+                <div style={{paddingLeft:'2.8%', position:'relative', zIndex:'3', background:'#115074',
+                    borderRadius:'0 20px 0 20px'}}>
+                    <h2>What we do</h2>
+                    <div style={{display: "flex", flexWrap: "wrap", flexDirection: "row", marginTop:12, paddingRight:'2.8%', paddingBottom:'2.8%'}}>
+                        <TextChunk isMobile={isMobile}/>
+                    </div>
+                </div>
+                <img src={bottomRight} style={{width:390,display: 'block', position:'relative', marginRight:0, marginLeft:'auto'}}/>
+        </div>
     )
 
     function TextChunk(props){
