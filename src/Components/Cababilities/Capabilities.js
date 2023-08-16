@@ -43,28 +43,9 @@ export function Capabilities() {
     )
 }
 
-
-// <div style={{height:'fit-content'}}>
-//     <h2 className={"headerText"}>Capabilities</h2>
-//     <div style={{display: "flex", height: 'fit-content'}}>
-//         <div style={{flex: 1, height: 'fit-content', position:"relative"}}>
-//             <div style={{display: 'flex', justifyContent:'center'}}>
-//                 <LeftFlowChart/>
-//                 <div style={{height: 500, flex:1, position: 'relative'}}/>
-//                 <RightFlowChart/>
-//             </div>
-//             <Footer/>
-//             <div>
-//                 <img src={moon} alt={"hero"} style={{top:"22%", left: "13%", position: "absolute", width:'auto', zIndex:-1}}/>
-//             </div>
-//         </div>
-//
-//     </div>
-// </div>
-
 function LeftFlowChart() {
     return (
-        <div style={{height: 500, width: 550, position: 'relative'}}>
+        <div style={{height: 500, width: 550, marginBottom: 40, position: 'relative', margin: '0 auto'}}>
             <BlueBox width={"99.85%"} height={"31.35%"} header={"SaaS Solutions"}
                      text={"Accelerator applications built to integrate and extend SAP's Source-to-Pay " +
                          "and Supply Chain solutions for industry specific verticals. Built on SAP BTP."}
@@ -93,7 +74,7 @@ function LeftFlowChart() {
 
 function RightFlowChart() {
     return (
-        <div style={{height: 700, width: 520, position: 'relative'}}>
+        <div style={{height: 700, width: 520, position: 'relative', margin:'0 auto'}}>
             <BlueBox width={"100%"} height={"31.7%"} header={"BTP Consulting Services"}
                      text={"Experts in designing, developing, and deploying integrations and extensions to " +
                          "solve your unique business requirements and use cases."}
@@ -216,31 +197,11 @@ function Arrow(props) {
     )
 }
 
-function Footer() {
-    return (
-        <div style={{height: "fit-content", width: '100%', position:"relative", marginTop:25}}>
-            <img src={bckgrd} alt={"hero"} style={{width: '100%', left:0}}/>
-            <div style={{top:11,width: '23%',position: "absolute", left:"18.5%"}}>
-                <h4 className={"text"} style={{paddingLeft:'11%', paddingRight:'11%'}}>
-                    Design Principles
-                </h4>
-            </div>
-            <div style={{top:'20%', height: '63%',width: '101.5%',position: "absolute", left:"-0.5%"}}>
-                <div style={{display: 'flex', height: '100%', width: '100%', alignItems:'flex-end', justifyContent:'center'}}>
-                    <IconBox src={icon1} text={"Built on SAP BTP Platform"} marg={25}/>
-                    <IconBox src={icon2} text={"Industry-Specific Accelerators"} marg={31}/>
-                    <IconBox src={icon3} text={"Mobile-First Approach"} marg={36}/>
-                    <IconBox src={icon4} text={"Cloud & Edge Solutions"} marg={26}/>
-                </div>
-            </div>
-        </div>
-    )
-}
 
 function Footer2() {
     return (
-        <div style={{height: "fit-content", width: '100%', position:"relative", marginTop:25, paddingTop:40}}>
-            <div style={{top:10,width: '23%',position: "absolute", left:"20.5%"}}>
+        <div className={'footer-container'}>
+            <div style={{top:10,width: '21.5%',position: "absolute", left:"20.5%"}}>
                 <h4 className={"text"}>
                     Design Principles
                 </h4>
@@ -258,7 +219,7 @@ function Footer2() {
 
 function MobileFooter() {
     return (
-        <div style={{height: "fit-content", width: '100%', position:"relative", marginTop:25, paddingTop:24}}>
+        <div className='mobile-footer'>
             <div style={{top:10,width: '50%',position: "absolute", left:"20%"}}>
                 <h4 className={"text"}>
                     Design Principles
@@ -274,22 +235,12 @@ function MobileFooter() {
         </div>
     )
 }
-function IconBox(props) {
-    return(
-        <div style={{justifyContent:'center', width:'80%',height: 'fit-content',display:'flex',flexDirection:'column'}}>
-            <div>
-                <img src={props.src} alt={"hero"}/>
-            </div>
-            <s1 style={{textAlign:'center',marginTop:props.marg}}>{props.text}</s1>
-        </div>
-    )
-}
 
 function IconBox2(props) {
     return(
-        <div style={{ alignContent: 'center', display:'flex',justifyContent:'flex-end', width: 230,height: 200,flexDirection:'column'}}>
+        <div className='IconBox' style={{ alignContent: 'center', display:'flex',justifyContent:'flex-end', width: 230,height: 200,flexDirection:'column'}}>
             <div>
-                <img src={props.src} alt={"hero"}/>
+                <img className='Icon' src={props.src} alt={"hero"}/>
             </div>
             <s1 style={{textAlign:'center',marginTop:props.marg}}>{props.text}</s1>
         </div>

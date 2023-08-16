@@ -9,8 +9,14 @@
 
 @media only screen and (max-width:700px) {
     .about-us-col1 {
-        height: 416px;
+        /*height: 416px;*/
+        height: fit-content;
         width: 100%;
+    }
+    .AboutUsImg{
+        width: 50%;
+        max-width: 300px;
+        /*height: 200px;*/
     }
 
     .about-us-col2 {

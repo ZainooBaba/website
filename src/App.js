@@ -28,7 +28,7 @@ function App() {
 
         <section id="Partners" className="margin-120 "><Partners/></section>
 
-        <section id="Careers" className="bgAble centerIt margin-125 filler" style={{position:"relative"}}><Careers /></section>
+        <section id="Careers" className="bgAble centerIt margin-125" style={{position:"relative"}}><Careers /></section>
 
         <section id="footer" className="bgAble">
           <ContactUs/>

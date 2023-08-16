@@ -1,2 +1,104 @@
-#WhatWeDo {
+:root{
+    --corner-radius: 28px;
+    --top-height: 50px;
+    --bottom-height: 70px;
 }
+
+.topCornerd{
+    border-radius: var(--corner-radius) var(--corner-radius) 0 0;
+}
+
+.bottomCornerd{
+    border-radius: 0 0 var(--corner-radius) var(--corner-radius);
+}
+
+.tabBlue{
+        background: var(--primary-darker);
+    position: relative;
+    }
+
+@media only screen and (max-width: 400px) {
+    .topBlue{
+        width: 80% !important;
+        min-width: unset !important;
+        max-width: unset !important;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+
+    .textContainer{
+        margin-top: 24px !important;
+    }
+
+    .bottomBlue{
+        width: 40% !important;
+        min-width: 150px !important;
+        max-width: unset !important;
+        /*min-width: 200px !important;*/
+    }
+
+}
+
+
+.textContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 32px;
+    padding-right: 2.8%;
+    padding-bottom: 14px;
+}
+
+.contentContainer{
+    position: relative;
+    top: -25px;
+}
+
+.topBlue{
+    max-width: 385px;
+    min-width: 300px;
+    width: 40%;
+    position: relative;
+}
+
+.bottomBlue{
+    max-width: 430px;
+    min-width: 300px;
+    width: 40%;
+}
+
+    .tabWhite{
+        position: relative;
+        width: calc(2* var(--corner-radius));
+        background: white;
+    }
+
+
+    .tabFill{
+        position: absolute;
+        width: var(--corner-radius);
+        background: var(--primary-darker);
+        z-index: -1;
+        height: 50%;
+    }
+
+    .tabHolder{
+        display: flex;
+    }
+
+    .topTab{
+        height: var(--top-height);
+    }
+
+    .bottomTab{
+        height: var(--bottom-height);
+    }
+
+    .circle{
+/*style={{position:"absolute", left: "42.8%", top: "45.9%"}}*/
+        position: absolute;
+        right: 170px;
+        top: 120px;
+    }

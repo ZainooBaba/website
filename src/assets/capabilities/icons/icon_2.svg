@@ -1,4 +1,4 @@
-<svg width="123" height="125" viewBox="0 0 123 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg preserveAspectRatio="none" width="123" height="125" viewBox="0 0 123 125" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="38" y="16" width="71" height="30" rx="12" fill="#7BCFFF"/>
 <rect opacity="0.5" y="24" width="72" height="101" rx="12" fill="#BDE7FF"/>
 <path d="M23 24.4138V18C23 9.16344 30.1634 2 39 2H47.5M84.25 2H96.5H108.5C115.404 2 121 7.59644 121 14.5V14.5M121 39.5V39.75C121 46.5155 115.515 52 108.75 52V52" stroke="#1F9FE8" stroke-width="3"/>

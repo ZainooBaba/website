@@ -1,6 +1,12 @@
 #Capabilities {
     /*64px + (64px - 28px)/2*/
-    margin-top: -82px;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width:700px) {
+    #Capabilities h2 {
+        margin-bottom: 0.8em;
+    }
 }
 
 .blueBox{
@@ -48,5 +54,33 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    /*justify-content: center;*/
     height: fit-content;
+}
+
+@media screen and (min-width: 725px) and (max-width: 960px) {
+    .Icon{
+        width: 70%
+    }
+    .IconBox{
+        width: 20% !important;
+    }
+
+}
+
+.footer-container{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+    padding-top: 40px;
+    padding-bottom: 55px;
+}
+
+.mobile-footer{
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+    padding-top: 24px;
 }
