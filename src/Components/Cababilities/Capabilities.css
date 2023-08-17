@@ -84,3 +84,15 @@
     margin-top: 25px;
     padding-top: 24px;
 }
+
+.midFiller1{
+    width: calc((80% - 330px)*0.125);
+}
+
+.midFiller2{
+    width: calc((80% - 330px)*0.875);
+}
+
+.midFiller3{
+    width: calc(100% - 130px);
+}

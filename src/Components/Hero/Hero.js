@@ -107,10 +107,10 @@ export class Hero extends React.Component {
 
         return (
             <div className="hero flex-container" style={{flexDirection:'row-reverse', alignItems: 'flex-start'}}>
-              <div className="halver" style={{height:'350px'}}>
+              <div className="halver image-holder" >
                   {HeroImage}
               </div>
-              <div className="halver">
+              <div className="halver text-holder">
                   <HeroText/>
               </div>
             </div>

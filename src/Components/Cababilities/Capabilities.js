@@ -18,6 +18,16 @@ import bckgrd from "../../assets/capabilities/arrows/bckgrd.svg";
 import bkgPMob from "../../assets/capabilities/arrows/bkgPMob.svg";
 import moon from "../../assets/capabilities/arrows/moon.svg";
 
+import xMax from "../../assets/capabilities/background/xMax.svg";
+import xMin from "../../assets/capabilities/background/xMin.svg";
+import xMid from "../../assets/capabilities/background/xMid.svg";
+import xTittle from "../../assets/capabilities/background/xTittle.svg";
+
+import mobxMax from "../../assets/capabilities/backMobile/xMax.svg";
+import mobxMin from "../../assets/capabilities/backMobile/xMin.svg";
+import mobxMid from "../../assets/capabilities/backMobile/xMid.svg";
+
+
 const breakpoints = 700;
 
 
@@ -38,7 +48,7 @@ export function Capabilities() {
                 {isMobile? <MobileChartLeft/> : <LeftFlowChart/>}
                 {isMobile? <MobileChartRight/> : <RightFlowChart/>}
             </div>
-            {isMobile? <MobileFooter/> : <Footer2/>}
+            {isMobile? <MobileFooter/> : <Footer3/>}
         </div>
     )
 }
@@ -217,10 +227,35 @@ function Footer2() {
     )
 }
 
+function Footer3() {
+    return (
+        <div className={'footer-container'}>
+            <div style={{top:10,width: 200,position: "absolute", left:"20.5%"}}>
+                <h4 className={"text"}>
+                    Design Principles
+                </h4>
+            </div>
+            <div style={{display: 'flex', justifyContent:'space-around', width: '100%', alignItems:'flex-end', flexWrap:'wrap'}}>
+                <IconBox2 src={icon1} text={"Built on SAP BTP Platform"} />
+                <IconBox2 src={icon2} text={"Industry-Specific Accelerators"} />
+                <IconBox2 src={icon3} text={"Mobile-First Approach"} />
+                <IconBox2 src={icon4} text={"Cloud & Edge Solutions"} />
+            </div>
+            <div style={{minHeight: 312, left:0, top:0,width:'100%',height:'100%', display:'flex',position:'absolute', zIndex:-1}}>
+            <img src={xMin} style={{width:'10%', height:'100%', position:"relative"}}/>
+                <img src={xMid} className='midFiller1' style={{ height:'100%'}}/>
+                <img src={xTittle} style={{width:330, height:'100%'}}/>
+                <img src={xMid} className='midFiller2' style={{ height:'100%'}}/>
+                <img src={xMax} style={{width:'10%', height:'100%'}}/>
+            </div>
+        </div>
+    )
+}
+
 function MobileFooter() {
     return (
         <div className='mobile-footer'>
-            <div style={{top:10,width: '50%',position: "absolute", left:"20%"}}>
+            <div style={{top:10,width: '60%',position: "absolute", left:"20%"}}>
                 <h4 className={"text"}>
                     Design Principles
                 </h4>
@@ -231,6 +266,29 @@ function MobileFooter() {
                     <IconBox2 src={icon3} text={"Mobile-First Approach"} />
                     <IconBox2 src={icon4} text={"Cloud & Edge Solutions"} />
                 </div>
+            <div style={{minHeight: 312, left:0, top:0,width:'100%',height:'105%', display:'flex',position:'absolute', zIndex:-1}}>
+                <img src={mobxMin} style={{width:30, height:'100%', position:"relative"}}/>
+                <img src={mobxMid} className='midFiller3' style={{ height:'100%'}}/>
+                <img src={mobxMax} style={{width:100, height:'100%'}}/>
+            </div>
+        </div>
+    )
+}
+
+function MobileFooter2() {
+    return (
+        <div className='mobile-footer'>
+            <div style={{top:10,width: '50%',position: "absolute", left:"20%"}}>
+                <h4 className={"text"}>
+                    Design Principles
+                </h4>
+            </div>
+            <div style={{display: 'flex', justifyContent:'space-around', width: '100%', alignItems:'flex-end', flexWrap:'wrap'}}>
+                <IconBox2 src={icon1} text={"Built on SAP BTP Platform"} />
+                <IconBox2 src={icon2} text={"Industry-Specific Accelerators"} />
+                <IconBox2 src={icon3} text={"Mobile-First Approach"} />
+                <IconBox2 src={icon4} text={"Cloud & Edge Solutions"} />
+            </div>
             <img src={bkgPMob} alt={"hero"} style={{  minHeight: 312, left:0, top:0,width:'100%',height:'105%',position:'absolute', zIndex:-1}}/>
         </div>
     )
